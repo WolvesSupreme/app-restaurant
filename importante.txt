@@ -1,0 +1,107 @@
+ <!-- <li>
+                     <a href="<?php echo constant('URL'); ?>restaurantlist">
+                         <i class="fa-solid fa-ballot"></i>
+                         <span> Restaurant List </span>
+                     </a>
+                 </li> -->
+
+                 <li>
+                     <a href="<?php echo constant('URL'); ?>onlystore">
+                         <i class="fa-solid fa-basket-shopping"></i>
+                         <span> Only Store </span>
+                     </a>
+                 </li><!-- End Only Store -->
+
+    
+    ** VISTA DE USUARIO **
+
+    {
+      "site": "dashboard",
+      "access": "private",
+      "role": "user"
+    },
+    {
+      "site": "menucatalogue",
+      "access": "private",
+      "role": "user"
+    },
+    {
+      "site": "menulist",
+      "access": "private",
+      "role": "user"
+    },
+    {
+      "site": "menugrid",
+      "access": "private",
+      "role": "user"
+    },
+    {
+      "site": "addproduct",
+      "access": "private",
+      "role": "user"
+    },
+    {
+      "site": "productdetail",
+      "access": "private",
+      "role": "user"
+    },
+    {
+      "site": "orders",
+      "access": "private",
+      "role": "user"
+    },
+    {
+      "site": "customersreview",
+      "access": "private",
+      "role": "user"
+    },
+    {
+      "site": "addemployees",
+      "access": "private",
+      "role": "user"
+    },
+    {
+      "site": "customerslist",
+      "access": "private",
+      "role": "user"
+    },
+    {
+      "site": "socialactivity",
+      "access": "private",
+      "role": "user"
+    },
+    {
+      "site": "analysis",
+      "access": "private",
+      "role": "user"
+    },
+    {
+      "site": "onlystore",
+      "access": "private",
+      "role": "user"
+    },
+    {
+      "site": "restaurantlist",
+      "access": "private",
+      "role": "user"
+    },
+    {
+      "site": "categories",
+      "access": "private",
+      "role": "user"
+    },
+    {
+      "site": "user",
+      "access": "private",
+      "role": "user"
+    },
+    {
+      "site": "profile",
+      "access": "private",
+      "role": "user"
+    },
+    {
+      "site": "expenses",
+      "access": "private",
+      "role": "user"
+    },

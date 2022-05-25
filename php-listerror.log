@@ -1,0 +1,908 @@
+[24-May-2022 09:55:52 Europe/Berlin] Inicio de aplicación web!
+[24-May-2022 09:55:52 Europe/Berlin] SessionController::validateSession()
+[24-May-2022 09:55:52 Europe/Berlin] sessionController::getUserSessionData(): stuwargg
+[24-May-2022 09:55:52 Europe/Berlin] sessionController::validateSession(): username:stuwargg - role: admin
+[24-May-2022 09:55:52 Europe/Berlin] sessionController::getCurrentPage(): actualLink =>/restaurant-app/, url => 
+[24-May-2022 09:55:52 Europe/Berlin] sessionController::isPublic(): currentURL => 
+[24-May-2022 09:55:52 Europe/Berlin] PHP Notice:  Undefined index: site in C:\xampp\htdocs\restaurant-app\classes\sessionController.php on line 164
+[24-May-2022 09:55:52 Europe/Berlin] PHP Notice:  Undefined index: site in C:\xampp\htdocs\restaurant-app\classes\sessionController.php on line 175
+[24-May-2022 09:55:52 Europe/Berlin] SessionController::validateSession() => sitio público, redirige al main de cada rol
+[24-May-2022 09:55:52 Europe/Berlin] Login::construct-> inicio de login
+[24-May-2022 09:55:52 Europe/Berlin] Login::render-> carga el index
+[24-May-2022 09:55:52 Europe/Berlin] Inicio de aplicación web!
+[24-May-2022 09:55:52 Europe/Berlin] SessionController::validateSession()
+[24-May-2022 09:55:52 Europe/Berlin] sessionController::getUserSessionData(): stuwargg
+[24-May-2022 09:55:52 Europe/Berlin] sessionController::validateSession(): username:stuwargg - role: admin
+[24-May-2022 09:55:52 Europe/Berlin] sessionController::getCurrentPage(): actualLink =>/restaurant-app/admin, url => admin
+[24-May-2022 09:55:52 Europe/Berlin] sessionController::isPublic(): currentURL => admin
+[24-May-2022 09:55:52 Europe/Berlin] PHP Notice:  Undefined index: site in C:\xampp\htdocs\restaurant-app\classes\sessionController.php on line 151
+[24-May-2022 09:55:52 Europe/Berlin] sessionController::getCurrentPage(): actualLink =>/restaurant-app/admin, url => admin
+[24-May-2022 09:55:52 Europe/Berlin] PHP Notice:  Undefined index: site in C:\xampp\htdocs\restaurant-app\classes\sessionController.php on line 188
+[24-May-2022 09:55:52 Europe/Berlin] SessionController::validateSession() => autorizado, lo deja pasar
+[24-May-2022 09:55:52 Europe/Berlin] sessionController::getUserSessionData(): stuwargg
+[24-May-2022 09:55:54 Europe/Berlin] Inicio de aplicación web!
+[24-May-2022 09:55:54 Europe/Berlin] SessionController::validateSession()
+[24-May-2022 09:55:54 Europe/Berlin] sessionController::getUserSessionData(): stuwargg
+[24-May-2022 09:55:54 Europe/Berlin] sessionController::validateSession(): username:stuwargg - role: admin
+[24-May-2022 09:55:54 Europe/Berlin] sessionController::getCurrentPage(): actualLink =>/restaurant-app/categories, url => categories
+[24-May-2022 09:55:54 Europe/Berlin] sessionController::isPublic(): currentURL => categories
+[24-May-2022 09:55:54 Europe/Berlin] PHP Notice:  Undefined index: site in C:\xampp\htdocs\restaurant-app\classes\sessionController.php on line 151
+[24-May-2022 09:55:54 Europe/Berlin] sessionController::getCurrentPage(): actualLink =>/restaurant-app/categories, url => categories
+[24-May-2022 09:55:54 Europe/Berlin] PHP Notice:  Undefined index: site in C:\xampp\htdocs\restaurant-app\classes\sessionController.php on line 188
+[24-May-2022 09:55:54 Europe/Berlin] SessionController::validateSession() => autorizado, lo deja pasar
+[24-May-2022 09:55:54 Europe/Berlin] sessionController::getUserSessionData(): stuwargg
+[24-May-2022 09:55:54 Europe/Berlin] Categorias::construct()
+[24-May-2022 09:55:54 Europe/Berlin] Categorias::RENDER() 
+[24-May-2022 09:55:54 Europe/Berlin] PHP Notice:  Undefined variable: datos in C:\xampp\htdocs\restaurant-app\views\categorias\index.php on line 99
+[24-May-2022 09:55:54 Europe/Berlin] PHP Warning:  Invalid argument supplied for foreach() in C:\xampp\htdocs\restaurant-app\views\categorias\index.php on line 99
+[24-May-2022 09:56:17 Europe/Berlin] Inicio de aplicación web!
+[24-May-2022 09:56:17 Europe/Berlin] SessionController::validateSession()
+[24-May-2022 09:56:17 Europe/Berlin] sessionController::getUserSessionData(): stuwargg
+[24-May-2022 09:56:17 Europe/Berlin] sessionController::validateSession(): username:stuwargg - role: admin
+[24-May-2022 09:56:17 Europe/Berlin] sessionController::getCurrentPage(): actualLink =>/restaurant-app/categories, url => categories
+[24-May-2022 09:56:17 Europe/Berlin] sessionController::isPublic(): currentURL => categories
+[24-May-2022 09:56:17 Europe/Berlin] PHP Notice:  Undefined index: site in C:\xampp\htdocs\restaurant-app\classes\sessionController.php on line 151
+[24-May-2022 09:56:17 Europe/Berlin] sessionController::getCurrentPage(): actualLink =>/restaurant-app/categories, url => categories
+[24-May-2022 09:56:17 Europe/Berlin] PHP Notice:  Undefined index: site in C:\xampp\htdocs\restaurant-app\classes\sessionController.php on line 188
+[24-May-2022 09:56:17 Europe/Berlin] SessionController::validateSession() => autorizado, lo deja pasar
+[24-May-2022 09:56:17 Europe/Berlin] sessionController::getUserSessionData(): stuwargg
+[24-May-2022 09:56:17 Europe/Berlin] Categorias::construct()
+[24-May-2022 09:56:17 Europe/Berlin] Categorias::RENDER() 
+[24-May-2022 09:56:17 Europe/Berlin] PHP Fatal error:  Uncaught Error: Cannot access private property CategoriesModel::$name in C:\xampp\htdocs\restaurant-app\views\categorias\index.php:103
+Stack trace:
+#0 C:\xampp\htdocs\restaurant-app\libs\view.php(18): require()
+#1 C:\xampp\htdocs\restaurant-app\controllers\categories.php(21): View->render('categorias/inde...', Array)
+#2 C:\xampp\htdocs\restaurant-app\libs\app.php(55): Categories->render()
+#3 C:\xampp\htdocs\restaurant-app\index.php(38): App->__construct()
+#4 {main}
+  thrown in C:\xampp\htdocs\restaurant-app\views\categorias\index.php on line 103
+[24-May-2022 09:56:52 Europe/Berlin] Inicio de aplicación web!
+[24-May-2022 09:56:53 Europe/Berlin] SessionController::validateSession()
+[24-May-2022 09:56:53 Europe/Berlin] sessionController::getUserSessionData(): stuwargg
+[24-May-2022 09:56:53 Europe/Berlin] sessionController::validateSession(): username:stuwargg - role: admin
+[24-May-2022 09:56:53 Europe/Berlin] sessionController::getCurrentPage(): actualLink =>/restaurant-app/categories, url => categories
+[24-May-2022 09:56:53 Europe/Berlin] sessionController::isPublic(): currentURL => categories
+[24-May-2022 09:56:53 Europe/Berlin] PHP Notice:  Undefined index: site in C:\xampp\htdocs\restaurant-app\classes\sessionController.php on line 151
+[24-May-2022 09:56:53 Europe/Berlin] sessionController::getCurrentPage(): actualLink =>/restaurant-app/categories, url => categories
+[24-May-2022 09:56:53 Europe/Berlin] PHP Notice:  Undefined index: site in C:\xampp\htdocs\restaurant-app\classes\sessionController.php on line 188
+[24-May-2022 09:56:53 Europe/Berlin] SessionController::validateSession() => autorizado, lo deja pasar
+[24-May-2022 09:56:53 Europe/Berlin] sessionController::getUserSessionData(): stuwargg
+[24-May-2022 09:56:53 Europe/Berlin] Categorias::construct()
+[24-May-2022 09:56:53 Europe/Berlin] Categorias::RENDER() 
+[24-May-2022 09:56:53 Europe/Berlin] PHP Fatal error:  Uncaught Error: Cannot access private property CategoriesModel::$name in C:\xampp\htdocs\restaurant-app\views\categorias\index.php:103
+Stack trace:
+#0 C:\xampp\htdocs\restaurant-app\libs\view.php(18): require()
+#1 C:\xampp\htdocs\restaurant-app\controllers\categories.php(20): View->render('categorias/inde...', Array)
+#2 C:\xampp\htdocs\restaurant-app\libs\app.php(55): Categories->render()
+#3 C:\xampp\htdocs\restaurant-app\index.php(38): App->__construct()
+#4 {main}
+  thrown in C:\xampp\htdocs\restaurant-app\views\categorias\index.php on line 103
+[24-May-2022 09:57:28 Europe/Berlin] Inicio de aplicación web!
+[24-May-2022 09:57:28 Europe/Berlin] SessionController::validateSession()
+[24-May-2022 09:57:28 Europe/Berlin] sessionController::getUserSessionData(): stuwargg
+[24-May-2022 09:57:28 Europe/Berlin] sessionController::validateSession(): username:stuwargg - role: admin
+[24-May-2022 09:57:28 Europe/Berlin] sessionController::getCurrentPage(): actualLink =>/restaurant-app/categories, url => categories
+[24-May-2022 09:57:28 Europe/Berlin] sessionController::isPublic(): currentURL => categories
+[24-May-2022 09:57:28 Europe/Berlin] PHP Notice:  Undefined index: site in C:\xampp\htdocs\restaurant-app\classes\sessionController.php on line 151
+[24-May-2022 09:57:28 Europe/Berlin] sessionController::getCurrentPage(): actualLink =>/restaurant-app/categories, url => categories
+[24-May-2022 09:57:28 Europe/Berlin] PHP Notice:  Undefined index: site in C:\xampp\htdocs\restaurant-app\classes\sessionController.php on line 188
+[24-May-2022 09:57:28 Europe/Berlin] SessionController::validateSession() => autorizado, lo deja pasar
+[24-May-2022 09:57:28 Europe/Berlin] sessionController::getUserSessionData(): stuwargg
+[24-May-2022 09:57:28 Europe/Berlin] Categorias::construct()
+[24-May-2022 09:57:28 Europe/Berlin] Categorias::RENDER() 
+[24-May-2022 09:57:28 Europe/Berlin] PHP Fatal error:  Uncaught Error: Cannot access private property CategoriesModel::$name in C:\xampp\htdocs\restaurant-app\views\categorias\index.php:104
+Stack trace:
+#0 C:\xampp\htdocs\restaurant-app\libs\view.php(18): require()
+#1 C:\xampp\htdocs\restaurant-app\controllers\categories.php(21): View->render('categorias/inde...', Array)
+#2 C:\xampp\htdocs\restaurant-app\libs\app.php(55): Categories->render()
+#3 C:\xampp\htdocs\restaurant-app\index.php(38): App->__construct()
+#4 {main}
+  thrown in C:\xampp\htdocs\restaurant-app\views\categorias\index.php on line 104
+[24-May-2022 10:01:03 Europe/Berlin] Inicio de aplicación web!
+[24-May-2022 10:01:03 Europe/Berlin] SessionController::validateSession()
+[24-May-2022 10:01:03 Europe/Berlin] sessionController::getUserSessionData(): stuwargg
+[24-May-2022 10:01:03 Europe/Berlin] sessionController::validateSession(): username:stuwargg - role: admin
+[24-May-2022 10:01:03 Europe/Berlin] sessionController::getCurrentPage(): actualLink =>/restaurant-app/categories, url => categories
+[24-May-2022 10:01:03 Europe/Berlin] sessionController::isPublic(): currentURL => categories
+[24-May-2022 10:01:03 Europe/Berlin] PHP Notice:  Undefined index: site in C:\xampp\htdocs\restaurant-app\classes\sessionController.php on line 151
+[24-May-2022 10:01:03 Europe/Berlin] sessionController::getCurrentPage(): actualLink =>/restaurant-app/categories, url => categories
+[24-May-2022 10:01:03 Europe/Berlin] PHP Notice:  Undefined index: site in C:\xampp\htdocs\restaurant-app\classes\sessionController.php on line 188
+[24-May-2022 10:01:03 Europe/Berlin] SessionController::validateSession() => autorizado, lo deja pasar
+[24-May-2022 10:01:03 Europe/Berlin] sessionController::getUserSessionData(): stuwargg
+[24-May-2022 10:01:03 Europe/Berlin] Categorias::construct()
+[24-May-2022 10:01:03 Europe/Berlin] Categorias::RENDER() 
+[24-May-2022 10:01:03 Europe/Berlin] PHP Notice:  Undefined index: categories in C:\xampp\htdocs\restaurant-app\views\categorias\index.php on line 4
+[24-May-2022 10:01:03 Europe/Berlin] PHP Notice:  Undefined index: categories in C:\xampp\htdocs\restaurant-app\views\categorias\index.php on line 100
+[24-May-2022 10:01:03 Europe/Berlin] PHP Warning:  Invalid argument supplied for foreach() in C:\xampp\htdocs\restaurant-app\views\categorias\index.php on line 100
+[24-May-2022 10:01:12 Europe/Berlin] Inicio de aplicación web!
+[24-May-2022 10:01:12 Europe/Berlin] SessionController::validateSession()
+[24-May-2022 10:01:12 Europe/Berlin] sessionController::getUserSessionData(): stuwargg
+[24-May-2022 10:01:12 Europe/Berlin] sessionController::validateSession(): username:stuwargg - role: admin
+[24-May-2022 10:01:12 Europe/Berlin] sessionController::getCurrentPage(): actualLink =>/restaurant-app/categories, url => categories
+[24-May-2022 10:01:12 Europe/Berlin] sessionController::isPublic(): currentURL => categories
+[24-May-2022 10:01:12 Europe/Berlin] PHP Notice:  Undefined index: site in C:\xampp\htdocs\restaurant-app\classes\sessionController.php on line 151
+[24-May-2022 10:01:12 Europe/Berlin] sessionController::getCurrentPage(): actualLink =>/restaurant-app/categories, url => categories
+[24-May-2022 10:01:12 Europe/Berlin] PHP Notice:  Undefined index: site in C:\xampp\htdocs\restaurant-app\classes\sessionController.php on line 188
+[24-May-2022 10:01:12 Europe/Berlin] SessionController::validateSession() => autorizado, lo deja pasar
+[24-May-2022 10:01:12 Europe/Berlin] sessionController::getUserSessionData(): stuwargg
+[24-May-2022 10:01:12 Europe/Berlin] Categorias::construct()
+[24-May-2022 10:01:12 Europe/Berlin] Categorias::RENDER() 
+[24-May-2022 10:01:12 Europe/Berlin] PHP Notice:  Undefined index: categories in C:\xampp\htdocs\restaurant-app\views\categorias\index.php on line 4
+[24-May-2022 10:01:12 Europe/Berlin] PHP Notice:  Undefined index: categories in C:\xampp\htdocs\restaurant-app\views\categorias\index.php on line 100
+[24-May-2022 10:01:12 Europe/Berlin] PHP Warning:  Invalid argument supplied for foreach() in C:\xampp\htdocs\restaurant-app\views\categorias\index.php on line 100
+[24-May-2022 10:03:22 Europe/Berlin] Inicio de aplicación web!
+[24-May-2022 10:03:22 Europe/Berlin] SessionController::validateSession()
+[24-May-2022 10:03:22 Europe/Berlin] sessionController::getUserSessionData(): stuwargg
+[24-May-2022 10:03:22 Europe/Berlin] sessionController::validateSession(): username:stuwargg - role: admin
+[24-May-2022 10:03:22 Europe/Berlin] sessionController::getCurrentPage(): actualLink =>/restaurant-app/categories, url => categories
+[24-May-2022 10:03:22 Europe/Berlin] sessionController::isPublic(): currentURL => categories
+[24-May-2022 10:03:22 Europe/Berlin] PHP Notice:  Undefined index: site in C:\xampp\htdocs\restaurant-app\classes\sessionController.php on line 151
+[24-May-2022 10:03:22 Europe/Berlin] sessionController::getCurrentPage(): actualLink =>/restaurant-app/categories, url => categories
+[24-May-2022 10:03:22 Europe/Berlin] PHP Notice:  Undefined index: site in C:\xampp\htdocs\restaurant-app\classes\sessionController.php on line 188
+[24-May-2022 10:03:22 Europe/Berlin] SessionController::validateSession() => autorizado, lo deja pasar
+[24-May-2022 10:03:22 Europe/Berlin] sessionController::getUserSessionData(): stuwargg
+[24-May-2022 10:03:22 Europe/Berlin] Categorias::construct()
+[24-May-2022 10:03:22 Europe/Berlin] Categorias::RENDER() 
+[24-May-2022 10:03:22 Europe/Berlin] PHP Notice:  Undefined index: categories in C:\xampp\htdocs\restaurant-app\views\categorias\index.php on line 4
+[24-May-2022 10:03:22 Europe/Berlin] PHP Notice:  Undefined index: categories in C:\xampp\htdocs\restaurant-app\views\categorias\index.php on line 100
+[24-May-2022 10:03:22 Europe/Berlin] PHP Warning:  Invalid argument supplied for foreach() in C:\xampp\htdocs\restaurant-app\views\categorias\index.php on line 100
+[24-May-2022 10:03:38 Europe/Berlin] Inicio de aplicación web!
+[24-May-2022 10:03:38 Europe/Berlin] SessionController::validateSession()
+[24-May-2022 10:03:38 Europe/Berlin] sessionController::getUserSessionData(): stuwargg
+[24-May-2022 10:03:38 Europe/Berlin] sessionController::validateSession(): username:stuwargg - role: admin
+[24-May-2022 10:03:38 Europe/Berlin] sessionController::getCurrentPage(): actualLink =>/restaurant-app/categories, url => categories
+[24-May-2022 10:03:38 Europe/Berlin] sessionController::isPublic(): currentURL => categories
+[24-May-2022 10:03:38 Europe/Berlin] PHP Notice:  Undefined index: site in C:\xampp\htdocs\restaurant-app\classes\sessionController.php on line 151
+[24-May-2022 10:03:38 Europe/Berlin] sessionController::getCurrentPage(): actualLink =>/restaurant-app/categories, url => categories
+[24-May-2022 10:03:38 Europe/Berlin] PHP Notice:  Undefined index: site in C:\xampp\htdocs\restaurant-app\classes\sessionController.php on line 188
+[24-May-2022 10:03:38 Europe/Berlin] SessionController::validateSession() => autorizado, lo deja pasar
+[24-May-2022 10:03:38 Europe/Berlin] sessionController::getUserSessionData(): stuwargg
+[24-May-2022 10:03:38 Europe/Berlin] Categorias::construct()
+[24-May-2022 10:03:38 Europe/Berlin] Categorias::RENDER() 
+[24-May-2022 10:03:38 Europe/Berlin] PHP Notice:  Undefined index: categories in C:\xampp\htdocs\restaurant-app\views\categorias\index.php on line 99
+[24-May-2022 10:03:38 Europe/Berlin] PHP Warning:  Invalid argument supplied for foreach() in C:\xampp\htdocs\restaurant-app\views\categorias\index.php on line 99
+[24-May-2022 10:04:04 Europe/Berlin] Inicio de aplicación web!
+[24-May-2022 10:04:04 Europe/Berlin] PHP Fatal error:  Uncaught Error: Class 'SessionController' not found in C:\xampp\htdocs\restaurant-app\controllers\categories.php:4
+Stack trace:
+#0 C:\xampp\htdocs\restaurant-app\index.php(24): require_once()
+#1 {main}
+  thrown in C:\xampp\htdocs\restaurant-app\controllers\categories.php on line 4
+[24-May-2022 10:04:27 Europe/Berlin] Inicio de aplicación web!
+[24-May-2022 10:04:27 Europe/Berlin] SessionController::validateSession()
+[24-May-2022 10:04:27 Europe/Berlin] sessionController::getUserSessionData(): stuwargg
+[24-May-2022 10:04:27 Europe/Berlin] sessionController::validateSession(): username:stuwargg - role: admin
+[24-May-2022 10:04:27 Europe/Berlin] sessionController::getCurrentPage(): actualLink =>/restaurant-app/categories, url => categories
+[24-May-2022 10:04:27 Europe/Berlin] sessionController::isPublic(): currentURL => categories
+[24-May-2022 10:04:27 Europe/Berlin] PHP Notice:  Undefined index: site in C:\xampp\htdocs\restaurant-app\classes\sessionController.php on line 151
+[24-May-2022 10:04:27 Europe/Berlin] sessionController::getCurrentPage(): actualLink =>/restaurant-app/categories, url => categories
+[24-May-2022 10:04:27 Europe/Berlin] PHP Notice:  Undefined index: site in C:\xampp\htdocs\restaurant-app\classes\sessionController.php on line 188
+[24-May-2022 10:04:27 Europe/Berlin] SessionController::validateSession() => autorizado, lo deja pasar
+[24-May-2022 10:04:27 Europe/Berlin] sessionController::getUserSessionData(): stuwargg
+[24-May-2022 10:04:27 Europe/Berlin] Categorias::construct()
+[24-May-2022 10:04:27 Europe/Berlin] Categorias::RENDER() 
+[24-May-2022 10:04:27 Europe/Berlin] PHP Notice:  Undefined index: categories in C:\xampp\htdocs\restaurant-app\views\categorias\index.php on line 99
+[24-May-2022 10:04:27 Europe/Berlin] PHP Warning:  Invalid argument supplied for foreach() in C:\xampp\htdocs\restaurant-app\views\categorias\index.php on line 99
+[24-May-2022 10:05:33 Europe/Berlin] Inicio de aplicación web!
+[24-May-2022 10:05:33 Europe/Berlin] SessionController::validateSession()
+[24-May-2022 10:05:33 Europe/Berlin] sessionController::getUserSessionData(): stuwargg
+[24-May-2022 10:05:33 Europe/Berlin] sessionController::validateSession(): username:stuwargg - role: admin
+[24-May-2022 10:05:33 Europe/Berlin] sessionController::getCurrentPage(): actualLink =>/restaurant-app/categories, url => categories
+[24-May-2022 10:05:33 Europe/Berlin] sessionController::isPublic(): currentURL => categories
+[24-May-2022 10:05:33 Europe/Berlin] PHP Notice:  Undefined index: site in C:\xampp\htdocs\restaurant-app\classes\sessionController.php on line 151
+[24-May-2022 10:05:33 Europe/Berlin] sessionController::getCurrentPage(): actualLink =>/restaurant-app/categories, url => categories
+[24-May-2022 10:05:33 Europe/Berlin] PHP Notice:  Undefined index: site in C:\xampp\htdocs\restaurant-app\classes\sessionController.php on line 188
+[24-May-2022 10:05:33 Europe/Berlin] SessionController::validateSession() => autorizado, lo deja pasar
+[24-May-2022 10:05:33 Europe/Berlin] sessionController::getUserSessionData(): stuwargg
+[24-May-2022 10:05:33 Europe/Berlin] Categorias::construct()
+[24-May-2022 10:05:33 Europe/Berlin] Categorias::RENDER() 
+[24-May-2022 10:05:33 Europe/Berlin] PHP Notice:  Undefined index: categories in C:\xampp\htdocs\restaurant-app\views\categorias\index.php on line 4
+[24-May-2022 10:05:33 Europe/Berlin] PHP Notice:  Undefined index: categories in C:\xampp\htdocs\restaurant-app\views\categorias\index.php on line 100
+[24-May-2022 10:05:33 Europe/Berlin] PHP Warning:  Invalid argument supplied for foreach() in C:\xampp\htdocs\restaurant-app\views\categorias\index.php on line 100
+[24-May-2022 10:05:42 Europe/Berlin] Inicio de aplicación web!
+[24-May-2022 10:05:42 Europe/Berlin] SessionController::validateSession()
+[24-May-2022 10:05:42 Europe/Berlin] sessionController::getUserSessionData(): stuwargg
+[24-May-2022 10:05:42 Europe/Berlin] sessionController::validateSession(): username:stuwargg - role: admin
+[24-May-2022 10:05:42 Europe/Berlin] sessionController::getCurrentPage(): actualLink =>/restaurant-app/categories, url => categories
+[24-May-2022 10:05:42 Europe/Berlin] sessionController::isPublic(): currentURL => categories
+[24-May-2022 10:05:42 Europe/Berlin] PHP Notice:  Undefined index: site in C:\xampp\htdocs\restaurant-app\classes\sessionController.php on line 151
+[24-May-2022 10:05:42 Europe/Berlin] sessionController::getCurrentPage(): actualLink =>/restaurant-app/categories, url => categories
+[24-May-2022 10:05:42 Europe/Berlin] PHP Notice:  Undefined index: site in C:\xampp\htdocs\restaurant-app\classes\sessionController.php on line 188
+[24-May-2022 10:05:42 Europe/Berlin] SessionController::validateSession() => autorizado, lo deja pasar
+[24-May-2022 10:05:42 Europe/Berlin] sessionController::getUserSessionData(): stuwargg
+[24-May-2022 10:05:42 Europe/Berlin] Categorias::construct()
+[24-May-2022 10:05:42 Europe/Berlin] Categorias::RENDER() 
+[24-May-2022 10:05:42 Europe/Berlin] PHP Notice:  Undefined index: categories in C:\xampp\htdocs\restaurant-app\views\categorias\index.php on line 4
+[24-May-2022 10:05:42 Europe/Berlin] PHP Warning:  Invalid argument supplied for foreach() in C:\xampp\htdocs\restaurant-app\views\categorias\index.php on line 100
+[24-May-2022 10:05:54 Europe/Berlin] Inicio de aplicación web!
+[24-May-2022 10:05:55 Europe/Berlin] SessionController::validateSession()
+[24-May-2022 10:05:55 Europe/Berlin] sessionController::getUserSessionData(): stuwargg
+[24-May-2022 10:05:55 Europe/Berlin] sessionController::validateSession(): username:stuwargg - role: admin
+[24-May-2022 10:05:55 Europe/Berlin] sessionController::getCurrentPage(): actualLink =>/restaurant-app/categories, url => categories
+[24-May-2022 10:05:55 Europe/Berlin] sessionController::isPublic(): currentURL => categories
+[24-May-2022 10:05:55 Europe/Berlin] PHP Notice:  Undefined index: site in C:\xampp\htdocs\restaurant-app\classes\sessionController.php on line 151
+[24-May-2022 10:05:55 Europe/Berlin] sessionController::getCurrentPage(): actualLink =>/restaurant-app/categories, url => categories
+[24-May-2022 10:05:55 Europe/Berlin] PHP Notice:  Undefined index: site in C:\xampp\htdocs\restaurant-app\classes\sessionController.php on line 188
+[24-May-2022 10:05:55 Europe/Berlin] SessionController::validateSession() => autorizado, lo deja pasar
+[24-May-2022 10:05:55 Europe/Berlin] sessionController::getUserSessionData(): stuwargg
+[24-May-2022 10:05:55 Europe/Berlin] Categorias::construct()
+[24-May-2022 10:05:55 Europe/Berlin] Categorias::RENDER() 
+[24-May-2022 10:05:55 Europe/Berlin] PHP Notice:  Undefined index: categories in C:\xampp\htdocs\restaurant-app\views\categorias\index.php on line 4
+[24-May-2022 10:05:55 Europe/Berlin] PHP Warning:  Invalid argument supplied for foreach() in C:\xampp\htdocs\restaurant-app\views\categorias\index.php on line 100
+[24-May-2022 10:06:03 Europe/Berlin] Inicio de aplicación web!
+[24-May-2022 10:06:03 Europe/Berlin] SessionController::validateSession()
+[24-May-2022 10:06:03 Europe/Berlin] sessionController::getUserSessionData(): stuwargg
+[24-May-2022 10:06:03 Europe/Berlin] sessionController::validateSession(): username:stuwargg - role: admin
+[24-May-2022 10:06:03 Europe/Berlin] sessionController::getCurrentPage(): actualLink =>/restaurant-app/categories, url => categories
+[24-May-2022 10:06:03 Europe/Berlin] sessionController::isPublic(): currentURL => categories
+[24-May-2022 10:06:03 Europe/Berlin] PHP Notice:  Undefined index: site in C:\xampp\htdocs\restaurant-app\classes\sessionController.php on line 151
+[24-May-2022 10:06:03 Europe/Berlin] sessionController::getCurrentPage(): actualLink =>/restaurant-app/categories, url => categories
+[24-May-2022 10:06:03 Europe/Berlin] PHP Notice:  Undefined index: site in C:\xampp\htdocs\restaurant-app\classes\sessionController.php on line 188
+[24-May-2022 10:06:03 Europe/Berlin] SessionController::validateSession() => autorizado, lo deja pasar
+[24-May-2022 10:06:03 Europe/Berlin] sessionController::getUserSessionData(): stuwargg
+[24-May-2022 10:06:03 Europe/Berlin] Categorias::construct()
+[24-May-2022 10:06:03 Europe/Berlin] Categorias::RENDER() 
+[24-May-2022 10:06:03 Europe/Berlin] PHP Notice:  Undefined index: categories in C:\xampp\htdocs\restaurant-app\views\categorias\index.php on line 4
+[24-May-2022 10:06:03 Europe/Berlin] PHP Warning:  Invalid argument supplied for foreach() in C:\xampp\htdocs\restaurant-app\views\categorias\index.php on line 100
+[24-May-2022 10:06:15 Europe/Berlin] Inicio de aplicación web!
+[24-May-2022 10:06:15 Europe/Berlin] SessionController::validateSession()
+[24-May-2022 10:06:15 Europe/Berlin] sessionController::getUserSessionData(): stuwargg
+[24-May-2022 10:06:15 Europe/Berlin] sessionController::validateSession(): username:stuwargg - role: admin
+[24-May-2022 10:06:15 Europe/Berlin] sessionController::getCurrentPage(): actualLink =>/restaurant-app/categories, url => categories
+[24-May-2022 10:06:15 Europe/Berlin] sessionController::isPublic(): currentURL => categories
+[24-May-2022 10:06:15 Europe/Berlin] PHP Notice:  Undefined index: site in C:\xampp\htdocs\restaurant-app\classes\sessionController.php on line 151
+[24-May-2022 10:06:15 Europe/Berlin] sessionController::getCurrentPage(): actualLink =>/restaurant-app/categories, url => categories
+[24-May-2022 10:06:15 Europe/Berlin] PHP Notice:  Undefined index: site in C:\xampp\htdocs\restaurant-app\classes\sessionController.php on line 188
+[24-May-2022 10:06:15 Europe/Berlin] SessionController::validateSession() => autorizado, lo deja pasar
+[24-May-2022 10:06:15 Europe/Berlin] sessionController::getUserSessionData(): stuwargg
+[24-May-2022 10:06:15 Europe/Berlin] Categorias::construct()
+[24-May-2022 10:06:15 Europe/Berlin] Categorias::RENDER() 
+[24-May-2022 10:06:15 Europe/Berlin] PHP Notice:  Undefined index: categories in C:\xampp\htdocs\restaurant-app\views\categorias\index.php on line 4
+[24-May-2022 10:06:15 Europe/Berlin] PHP Fatal error:  Uncaught Error: Cannot use object of type CategoriesModel as array in C:\xampp\htdocs\restaurant-app\views\categorias\index.php:102
+Stack trace:
+#0 C:\xampp\htdocs\restaurant-app\libs\view.php(18): require()
+#1 C:\xampp\htdocs\restaurant-app\controllers\categories.php(21): View->render('categorias/inde...', Array)
+#2 C:\xampp\htdocs\restaurant-app\libs\app.php(55): Categories->render()
+#3 C:\xampp\htdocs\restaurant-app\index.php(42): App->__construct()
+#4 {main}
+  thrown in C:\xampp\htdocs\restaurant-app\views\categorias\index.php on line 102
+[24-May-2022 10:06:20 Europe/Berlin] Inicio de aplicación web!
+[24-May-2022 10:06:20 Europe/Berlin] SessionController::validateSession()
+[24-May-2022 10:06:20 Europe/Berlin] sessionController::getUserSessionData(): stuwargg
+[24-May-2022 10:06:20 Europe/Berlin] sessionController::validateSession(): username:stuwargg - role: admin
+[24-May-2022 10:06:20 Europe/Berlin] sessionController::getCurrentPage(): actualLink =>/restaurant-app/categories, url => categories
+[24-May-2022 10:06:20 Europe/Berlin] sessionController::isPublic(): currentURL => categories
+[24-May-2022 10:06:20 Europe/Berlin] PHP Notice:  Undefined index: site in C:\xampp\htdocs\restaurant-app\classes\sessionController.php on line 151
+[24-May-2022 10:06:20 Europe/Berlin] sessionController::getCurrentPage(): actualLink =>/restaurant-app/categories, url => categories
+[24-May-2022 10:06:20 Europe/Berlin] PHP Notice:  Undefined index: site in C:\xampp\htdocs\restaurant-app\classes\sessionController.php on line 188
+[24-May-2022 10:06:20 Europe/Berlin] SessionController::validateSession() => autorizado, lo deja pasar
+[24-May-2022 10:06:20 Europe/Berlin] sessionController::getUserSessionData(): stuwargg
+[24-May-2022 10:06:20 Europe/Berlin] Categorias::construct()
+[24-May-2022 10:06:21 Europe/Berlin] Categorias::RENDER() 
+[24-May-2022 10:06:21 Europe/Berlin] PHP Notice:  Undefined index: categories in C:\xampp\htdocs\restaurant-app\views\categorias\index.php on line 4
+[24-May-2022 10:06:21 Europe/Berlin] PHP Fatal error:  Uncaught Error: Cannot use object of type CategoriesModel as array in C:\xampp\htdocs\restaurant-app\views\categorias\index.php:102
+Stack trace:
+#0 C:\xampp\htdocs\restaurant-app\libs\view.php(18): require()
+#1 C:\xampp\htdocs\restaurant-app\controllers\categories.php(21): View->render('categorias/inde...', Array)
+#2 C:\xampp\htdocs\restaurant-app\libs\app.php(55): Categories->render()
+#3 C:\xampp\htdocs\restaurant-app\index.php(42): App->__construct()
+#4 {main}
+  thrown in C:\xampp\htdocs\restaurant-app\views\categorias\index.php on line 102
+[24-May-2022 10:06:30 Europe/Berlin] Inicio de aplicación web!
+[24-May-2022 10:06:30 Europe/Berlin] SessionController::validateSession()
+[24-May-2022 10:06:30 Europe/Berlin] sessionController::getUserSessionData(): stuwargg
+[24-May-2022 10:06:30 Europe/Berlin] sessionController::validateSession(): username:stuwargg - role: admin
+[24-May-2022 10:06:30 Europe/Berlin] sessionController::getCurrentPage(): actualLink =>/restaurant-app/categories, url => categories
+[24-May-2022 10:06:30 Europe/Berlin] sessionController::isPublic(): currentURL => categories
+[24-May-2022 10:06:30 Europe/Berlin] PHP Notice:  Undefined index: site in C:\xampp\htdocs\restaurant-app\classes\sessionController.php on line 151
+[24-May-2022 10:06:30 Europe/Berlin] sessionController::getCurrentPage(): actualLink =>/restaurant-app/categories, url => categories
+[24-May-2022 10:06:30 Europe/Berlin] PHP Notice:  Undefined index: site in C:\xampp\htdocs\restaurant-app\classes\sessionController.php on line 188
+[24-May-2022 10:06:30 Europe/Berlin] SessionController::validateSession() => autorizado, lo deja pasar
+[24-May-2022 10:06:30 Europe/Berlin] sessionController::getUserSessionData(): stuwargg
+[24-May-2022 10:06:30 Europe/Berlin] Categorias::construct()
+[24-May-2022 10:06:30 Europe/Berlin] Categorias::RENDER() 
+[24-May-2022 10:06:30 Europe/Berlin] PHP Notice:  Undefined index: categories in C:\xampp\htdocs\restaurant-app\views\categorias\index.php on line 4
+[24-May-2022 10:06:30 Europe/Berlin] PHP Warning:  Invalid argument supplied for foreach() in C:\xampp\htdocs\restaurant-app\views\categorias\index.php on line 100
+[24-May-2022 10:15:27 Europe/Berlin] Inicio de aplicación web!
+[24-May-2022 10:15:27 Europe/Berlin] SessionController::validateSession()
+[24-May-2022 10:15:27 Europe/Berlin] sessionController::getUserSessionData(): stuwargg
+[24-May-2022 10:15:27 Europe/Berlin] sessionController::validateSession(): username:stuwargg - role: admin
+[24-May-2022 10:15:27 Europe/Berlin] sessionController::getCurrentPage(): actualLink =>/restaurant-app/categories, url => categories
+[24-May-2022 10:15:27 Europe/Berlin] sessionController::isPublic(): currentURL => categories
+[24-May-2022 10:15:27 Europe/Berlin] PHP Notice:  Undefined index: site in C:\xampp\htdocs\restaurant-app\classes\sessionController.php on line 151
+[24-May-2022 10:15:27 Europe/Berlin] sessionController::getCurrentPage(): actualLink =>/restaurant-app/categories, url => categories
+[24-May-2022 10:15:27 Europe/Berlin] PHP Notice:  Undefined index: site in C:\xampp\htdocs\restaurant-app\classes\sessionController.php on line 188
+[24-May-2022 10:15:27 Europe/Berlin] SessionController::validateSession() => autorizado, lo deja pasar
+[24-May-2022 10:15:27 Europe/Berlin] sessionController::getUserSessionData(): stuwargg
+[24-May-2022 10:15:27 Europe/Berlin] Categorias::construct()
+[24-May-2022 10:15:27 Europe/Berlin] Categorias::RENDER() 
+[24-May-2022 10:15:27 Europe/Berlin] PHP Notice:  Undefined index: categories in C:\xampp\htdocs\restaurant-app\views\categorias\index.php on line 4
+[24-May-2022 10:15:27 Europe/Berlin] PHP Notice:  Undefined variable: connect in C:\xampp\htdocs\restaurant-app\views\categorias\index.php on line 102
+[24-May-2022 10:15:27 Europe/Berlin] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, null given in C:\xampp\htdocs\restaurant-app\views\categorias\index.php on line 102
+[24-May-2022 10:15:27 Europe/Berlin] PHP Warning:  mysqli_fetch_array() expects parameter 1 to be mysqli_result, null given in C:\xampp\htdocs\restaurant-app\views\categorias\index.php on line 104
+[24-May-2022 10:15:53 Europe/Berlin] Inicio de aplicación web!
+[24-May-2022 10:15:53 Europe/Berlin] SessionController::validateSession()
+[24-May-2022 10:15:53 Europe/Berlin] sessionController::getUserSessionData(): stuwargg
+[24-May-2022 10:15:53 Europe/Berlin] sessionController::validateSession(): username:stuwargg - role: admin
+[24-May-2022 10:15:53 Europe/Berlin] sessionController::getCurrentPage(): actualLink =>/restaurant-app/categories, url => categories
+[24-May-2022 10:15:53 Europe/Berlin] sessionController::isPublic(): currentURL => categories
+[24-May-2022 10:15:53 Europe/Berlin] PHP Notice:  Undefined index: site in C:\xampp\htdocs\restaurant-app\classes\sessionController.php on line 151
+[24-May-2022 10:15:53 Europe/Berlin] sessionController::getCurrentPage(): actualLink =>/restaurant-app/categories, url => categories
+[24-May-2022 10:15:53 Europe/Berlin] PHP Notice:  Undefined index: site in C:\xampp\htdocs\restaurant-app\classes\sessionController.php on line 188
+[24-May-2022 10:15:53 Europe/Berlin] SessionController::validateSession() => autorizado, lo deja pasar
+[24-May-2022 10:15:53 Europe/Berlin] sessionController::getUserSessionData(): stuwargg
+[24-May-2022 10:15:53 Europe/Berlin] Categorias::construct()
+[24-May-2022 10:15:53 Europe/Berlin] Categorias::RENDER() 
+[24-May-2022 10:15:54 Europe/Berlin] PHP Notice:  Undefined index: categories in C:\xampp\htdocs\restaurant-app\views\categorias\index.php on line 4
+[24-May-2022 10:15:54 Europe/Berlin] PHP Notice:  Undefined variable: mostrar in C:\xampp\htdocs\restaurant-app\views\categorias\index.php on line 100
+[24-May-2022 10:15:54 Europe/Berlin] PHP Notice:  Undefined variable: connect in C:\xampp\htdocs\restaurant-app\views\categorias\index.php on line 103
+[24-May-2022 10:15:54 Europe/Berlin] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, null given in C:\xampp\htdocs\restaurant-app\views\categorias\index.php on line 103
+[24-May-2022 10:15:54 Europe/Berlin] PHP Warning:  mysqli_fetch_array() expects parameter 1 to be mysqli_result, null given in C:\xampp\htdocs\restaurant-app\views\categorias\index.php on line 105
+[24-May-2022 10:17:11 Europe/Berlin] Inicio de aplicación web!
+[24-May-2022 10:17:11 Europe/Berlin] SessionController::validateSession()
+[24-May-2022 10:17:11 Europe/Berlin] sessionController::getUserSessionData(): stuwargg
+[24-May-2022 10:17:11 Europe/Berlin] sessionController::validateSession(): username:stuwargg - role: admin
+[24-May-2022 10:17:11 Europe/Berlin] sessionController::getCurrentPage(): actualLink =>/restaurant-app/categories, url => categories
+[24-May-2022 10:17:12 Europe/Berlin] sessionController::isPublic(): currentURL => categories
+[24-May-2022 10:17:12 Europe/Berlin] PHP Notice:  Undefined index: site in C:\xampp\htdocs\restaurant-app\classes\sessionController.php on line 151
+[24-May-2022 10:17:12 Europe/Berlin] sessionController::getCurrentPage(): actualLink =>/restaurant-app/categories, url => categories
+[24-May-2022 10:17:12 Europe/Berlin] PHP Notice:  Undefined index: site in C:\xampp\htdocs\restaurant-app\classes\sessionController.php on line 188
+[24-May-2022 10:17:12 Europe/Berlin] SessionController::validateSession() => autorizado, lo deja pasar
+[24-May-2022 10:17:12 Europe/Berlin] sessionController::getUserSessionData(): stuwargg
+[24-May-2022 10:17:12 Europe/Berlin] Categorias::construct()
+[24-May-2022 10:17:12 Europe/Berlin] Categorias::RENDER() 
+[24-May-2022 10:17:12 Europe/Berlin] PHP Notice:  Undefined index: categories in C:\xampp\htdocs\restaurant-app\views\categorias\index.php on line 4
+[24-May-2022 10:17:12 Europe/Berlin] PHP Notice:  Undefined variable: mostrar in C:\xampp\htdocs\restaurant-app\views\categorias\index.php on line 102
+[24-May-2022 10:17:12 Europe/Berlin] PHP Notice:  Undefined index: colors in C:\xampp\htdocs\restaurant-app\views\categorias\index.php on line 112
+[24-May-2022 10:17:24 Europe/Berlin] Inicio de aplicación web!
+[24-May-2022 10:17:24 Europe/Berlin] SessionController::validateSession()
+[24-May-2022 10:17:24 Europe/Berlin] sessionController::getUserSessionData(): stuwargg
+[24-May-2022 10:17:24 Europe/Berlin] sessionController::validateSession(): username:stuwargg - role: admin
+[24-May-2022 10:17:24 Europe/Berlin] sessionController::getCurrentPage(): actualLink =>/restaurant-app/categories, url => categories
+[24-May-2022 10:17:24 Europe/Berlin] sessionController::isPublic(): currentURL => categories
+[24-May-2022 10:17:24 Europe/Berlin] PHP Notice:  Undefined index: site in C:\xampp\htdocs\restaurant-app\classes\sessionController.php on line 151
+[24-May-2022 10:17:24 Europe/Berlin] sessionController::getCurrentPage(): actualLink =>/restaurant-app/categories, url => categories
+[24-May-2022 10:17:24 Europe/Berlin] PHP Notice:  Undefined index: site in C:\xampp\htdocs\restaurant-app\classes\sessionController.php on line 188
+[24-May-2022 10:17:24 Europe/Berlin] SessionController::validateSession() => autorizado, lo deja pasar
+[24-May-2022 10:17:24 Europe/Berlin] sessionController::getUserSessionData(): stuwargg
+[24-May-2022 10:17:24 Europe/Berlin] Categorias::construct()
+[24-May-2022 10:17:24 Europe/Berlin] Categorias::RENDER() 
+[24-May-2022 10:17:24 Europe/Berlin] PHP Notice:  Undefined index: categories in C:\xampp\htdocs\restaurant-app\views\categorias\index.php on line 4
+[24-May-2022 10:17:24 Europe/Berlin] PHP Notice:  Undefined variable: mostrar in C:\xampp\htdocs\restaurant-app\views\categorias\index.php on line 102
+[24-May-2022 10:17:35 Europe/Berlin] Inicio de aplicación web!
+[24-May-2022 10:17:35 Europe/Berlin] SessionController::validateSession()
+[24-May-2022 10:17:35 Europe/Berlin] sessionController::getUserSessionData(): stuwargg
+[24-May-2022 10:17:35 Europe/Berlin] sessionController::validateSession(): username:stuwargg - role: admin
+[24-May-2022 10:17:35 Europe/Berlin] sessionController::getCurrentPage(): actualLink =>/restaurant-app/categories, url => categories
+[24-May-2022 10:17:35 Europe/Berlin] sessionController::isPublic(): currentURL => categories
+[24-May-2022 10:17:35 Europe/Berlin] PHP Notice:  Undefined index: site in C:\xampp\htdocs\restaurant-app\classes\sessionController.php on line 151
+[24-May-2022 10:17:35 Europe/Berlin] sessionController::getCurrentPage(): actualLink =>/restaurant-app/categories, url => categories
+[24-May-2022 10:17:35 Europe/Berlin] PHP Notice:  Undefined index: site in C:\xampp\htdocs\restaurant-app\classes\sessionController.php on line 188
+[24-May-2022 10:17:35 Europe/Berlin] SessionController::validateSession() => autorizado, lo deja pasar
+[24-May-2022 10:17:35 Europe/Berlin] sessionController::getUserSessionData(): stuwargg
+[24-May-2022 10:17:35 Europe/Berlin] Categorias::construct()
+[24-May-2022 10:17:35 Europe/Berlin] Categorias::RENDER() 
+[24-May-2022 10:17:35 Europe/Berlin] PHP Notice:  Undefined index: categories in C:\xampp\htdocs\restaurant-app\views\categorias\index.php on line 4
+[24-May-2022 10:17:40 Europe/Berlin] Inicio de aplicación web!
+[24-May-2022 10:22:24 Europe/Berlin] Inicio de aplicación web!
+[24-May-2022 10:22:24 Europe/Berlin] SessionController::validateSession()
+[24-May-2022 10:22:24 Europe/Berlin] sessionController::getUserSessionData(): stuwargg
+[24-May-2022 10:22:24 Europe/Berlin] sessionController::validateSession(): username:stuwargg - role: admin
+[24-May-2022 10:22:24 Europe/Berlin] sessionController::getCurrentPage(): actualLink =>/restaurant-app/categories, url => categories
+[24-May-2022 10:22:24 Europe/Berlin] sessionController::isPublic(): currentURL => categories
+[24-May-2022 10:22:24 Europe/Berlin] PHP Notice:  Undefined index: site in C:\xampp\htdocs\restaurant-app\classes\sessionController.php on line 151
+[24-May-2022 10:22:24 Europe/Berlin] sessionController::getCurrentPage(): actualLink =>/restaurant-app/categories, url => categories
+[24-May-2022 10:22:24 Europe/Berlin] PHP Notice:  Undefined index: site in C:\xampp\htdocs\restaurant-app\classes\sessionController.php on line 188
+[24-May-2022 10:22:24 Europe/Berlin] SessionController::validateSession() => autorizado, lo deja pasar
+[24-May-2022 10:22:24 Europe/Berlin] sessionController::getUserSessionData(): stuwargg
+[24-May-2022 10:22:24 Europe/Berlin] Categorias::construct()
+[24-May-2022 10:22:24 Europe/Berlin] Categorias::RENDER() 
+[24-May-2022 10:22:24 Europe/Berlin] PHP Notice:  Undefined index: dates in C:\xampp\htdocs\restaurant-app\views\categorias\index.php on line 3
+[24-May-2022 10:22:24 Europe/Berlin] PHP Notice:  Undefined index: categories in C:\xampp\htdocs\restaurant-app\views\categorias\index.php on line 4
+[24-May-2022 10:22:48 Europe/Berlin] Inicio de aplicación web!
+[24-May-2022 10:22:48 Europe/Berlin] SessionController::validateSession()
+[24-May-2022 10:22:48 Europe/Berlin] sessionController::getUserSessionData(): stuwargg
+[24-May-2022 10:22:48 Europe/Berlin] sessionController::validateSession(): username:stuwargg - role: admin
+[24-May-2022 10:22:48 Europe/Berlin] sessionController::getCurrentPage(): actualLink =>/restaurant-app/categories, url => categories
+[24-May-2022 10:22:48 Europe/Berlin] sessionController::isPublic(): currentURL => categories
+[24-May-2022 10:22:48 Europe/Berlin] PHP Notice:  Undefined index: site in C:\xampp\htdocs\restaurant-app\classes\sessionController.php on line 151
+[24-May-2022 10:22:48 Europe/Berlin] sessionController::getCurrentPage(): actualLink =>/restaurant-app/categories, url => categories
+[24-May-2022 10:22:48 Europe/Berlin] PHP Notice:  Undefined index: site in C:\xampp\htdocs\restaurant-app\classes\sessionController.php on line 188
+[24-May-2022 10:22:48 Europe/Berlin] SessionController::validateSession() => autorizado, lo deja pasar
+[24-May-2022 10:22:48 Europe/Berlin] sessionController::getUserSessionData(): stuwargg
+[24-May-2022 10:22:48 Europe/Berlin] Categorias::construct()
+[24-May-2022 10:22:48 Europe/Berlin] Categorias::RENDER() 
+[24-May-2022 10:22:48 Europe/Berlin] PHP Notice:  Undefined index: dates in C:\xampp\htdocs\restaurant-app\views\categorias\index.php on line 3
+[24-May-2022 10:22:48 Europe/Berlin] PHP Notice:  Undefined index: categories in C:\xampp\htdocs\restaurant-app\views\categorias\index.php on line 4
+[24-May-2022 10:23:01 Europe/Berlin] Inicio de aplicación web!
+[24-May-2022 10:23:01 Europe/Berlin] SessionController::validateSession()
+[24-May-2022 10:23:01 Europe/Berlin] sessionController::getUserSessionData(): stuwargg
+[24-May-2022 10:23:01 Europe/Berlin] sessionController::validateSession(): username:stuwargg - role: admin
+[24-May-2022 10:23:01 Europe/Berlin] sessionController::getCurrentPage(): actualLink =>/restaurant-app/categories, url => categories
+[24-May-2022 10:23:01 Europe/Berlin] sessionController::isPublic(): currentURL => categories
+[24-May-2022 10:23:01 Europe/Berlin] PHP Notice:  Undefined index: site in C:\xampp\htdocs\restaurant-app\classes\sessionController.php on line 151
+[24-May-2022 10:23:01 Europe/Berlin] sessionController::getCurrentPage(): actualLink =>/restaurant-app/categories, url => categories
+[24-May-2022 10:23:01 Europe/Berlin] PHP Notice:  Undefined index: site in C:\xampp\htdocs\restaurant-app\classes\sessionController.php on line 188
+[24-May-2022 10:23:01 Europe/Berlin] SessionController::validateSession() => autorizado, lo deja pasar
+[24-May-2022 10:23:01 Europe/Berlin] sessionController::getUserSessionData(): stuwargg
+[24-May-2022 10:23:01 Europe/Berlin] Categorias::construct()
+[24-May-2022 10:23:01 Europe/Berlin] Categorias::RENDER() 
+[24-May-2022 10:23:05 Europe/Berlin] Inicio de aplicación web!
+[24-May-2022 10:23:05 Europe/Berlin] SessionController::validateSession()
+[24-May-2022 10:23:05 Europe/Berlin] sessionController::getUserSessionData(): stuwargg
+[24-May-2022 10:23:05 Europe/Berlin] sessionController::validateSession(): username:stuwargg - role: admin
+[24-May-2022 10:23:05 Europe/Berlin] sessionController::getCurrentPage(): actualLink =>/restaurant-app/addemployees, url => addemployees
+[24-May-2022 10:23:05 Europe/Berlin] sessionController::isPublic(): currentURL => addemployees
+[24-May-2022 10:23:05 Europe/Berlin] PHP Notice:  Undefined index: site in C:\xampp\htdocs\restaurant-app\classes\sessionController.php on line 151
+[24-May-2022 10:23:05 Europe/Berlin] sessionController::getCurrentPage(): actualLink =>/restaurant-app/addemployees, url => addemployees
+[24-May-2022 10:23:05 Europe/Berlin] PHP Notice:  Undefined index: site in C:\xampp\htdocs\restaurant-app\classes\sessionController.php on line 188
+[24-May-2022 10:23:05 Europe/Berlin] SessionController::validateSession() => autorizado, lo deja pasar
+[24-May-2022 10:23:05 Europe/Berlin] sessionController::getUserSessionData(): stuwargg
+[24-May-2022 10:23:08 Europe/Berlin] Inicio de aplicación web!
+[24-May-2022 10:23:08 Europe/Berlin] SessionController::validateSession()
+[24-May-2022 10:23:08 Europe/Berlin] sessionController::getUserSessionData(): stuwargg
+[24-May-2022 10:23:08 Europe/Berlin] sessionController::validateSession(): username:stuwargg - role: admin
+[24-May-2022 10:23:08 Europe/Berlin] sessionController::getCurrentPage(): actualLink =>/restaurant-app/customerslist, url => customerslist
+[24-May-2022 10:23:08 Europe/Berlin] sessionController::isPublic(): currentURL => customerslist
+[24-May-2022 10:23:08 Europe/Berlin] PHP Notice:  Undefined index: site in C:\xampp\htdocs\restaurant-app\classes\sessionController.php on line 151
+[24-May-2022 10:23:08 Europe/Berlin] sessionController::getCurrentPage(): actualLink =>/restaurant-app/customerslist, url => customerslist
+[24-May-2022 10:23:08 Europe/Berlin] PHP Notice:  Undefined index: site in C:\xampp\htdocs\restaurant-app\classes\sessionController.php on line 188
+[24-May-2022 10:23:08 Europe/Berlin] SessionController::validateSession() => autorizado, lo deja pasar
+[24-May-2022 10:23:08 Europe/Berlin] sessionController::getUserSessionData(): stuwargg
+[24-May-2022 10:23:08 Europe/Berlin] Customerslist::construct-> inicio de Customers List
+[24-May-2022 10:25:26 Europe/Berlin] Inicio de aplicación web!
+[24-May-2022 10:25:26 Europe/Berlin] SessionController::validateSession()
+[24-May-2022 10:25:26 Europe/Berlin] sessionController::getUserSessionData(): stuwargg
+[24-May-2022 10:25:26 Europe/Berlin] sessionController::validateSession(): username:stuwargg - role: admin
+[24-May-2022 10:25:26 Europe/Berlin] sessionController::getCurrentPage(): actualLink =>/restaurant-app/customerslist, url => customerslist
+[24-May-2022 10:25:26 Europe/Berlin] sessionController::isPublic(): currentURL => customerslist
+[24-May-2022 10:25:26 Europe/Berlin] PHP Notice:  Undefined index: site in C:\xampp\htdocs\restaurant-app\classes\sessionController.php on line 151
+[24-May-2022 10:25:26 Europe/Berlin] sessionController::getCurrentPage(): actualLink =>/restaurant-app/customerslist, url => customerslist
+[24-May-2022 10:25:26 Europe/Berlin] PHP Notice:  Undefined index: site in C:\xampp\htdocs\restaurant-app\classes\sessionController.php on line 188
+[24-May-2022 10:25:26 Europe/Berlin] SessionController::validateSession() => autorizado, lo deja pasar
+[24-May-2022 10:25:26 Europe/Berlin] sessionController::getUserSessionData(): stuwargg
+[24-May-2022 10:25:26 Europe/Berlin] Customerslist::construct-> inicio de Customers List
+[24-May-2022 10:26:49 Europe/Berlin] Inicio de aplicación web!
+[24-May-2022 10:26:49 Europe/Berlin] SessionController::validateSession()
+[24-May-2022 10:26:49 Europe/Berlin] sessionController::getUserSessionData(): stuwargg
+[24-May-2022 10:26:49 Europe/Berlin] sessionController::validateSession(): username:stuwargg - role: admin
+[24-May-2022 10:26:49 Europe/Berlin] sessionController::getCurrentPage(): actualLink =>/restaurant-app/customerslist, url => customerslist
+[24-May-2022 10:26:49 Europe/Berlin] sessionController::isPublic(): currentURL => customerslist
+[24-May-2022 10:26:49 Europe/Berlin] PHP Notice:  Undefined index: site in C:\xampp\htdocs\restaurant-app\classes\sessionController.php on line 151
+[24-May-2022 10:26:49 Europe/Berlin] sessionController::getCurrentPage(): actualLink =>/restaurant-app/customerslist, url => customerslist
+[24-May-2022 10:26:49 Europe/Berlin] PHP Notice:  Undefined index: site in C:\xampp\htdocs\restaurant-app\classes\sessionController.php on line 188
+[24-May-2022 10:26:49 Europe/Berlin] SessionController::validateSession() => autorizado, lo deja pasar
+[24-May-2022 10:26:49 Europe/Berlin] sessionController::getUserSessionData(): stuwargg
+[24-May-2022 10:26:49 Europe/Berlin] Customerslist::construct-> inicio de Customers List
+[24-May-2022 10:27:13 Europe/Berlin] Inicio de aplicación web!
+[24-May-2022 10:27:13 Europe/Berlin] SessionController::validateSession()
+[24-May-2022 10:27:13 Europe/Berlin] sessionController::getUserSessionData(): stuwargg
+[24-May-2022 10:27:13 Europe/Berlin] sessionController::validateSession(): username:stuwargg - role: admin
+[24-May-2022 10:27:13 Europe/Berlin] sessionController::getCurrentPage(): actualLink =>/restaurant-app/customerslist, url => customerslist
+[24-May-2022 10:27:13 Europe/Berlin] sessionController::isPublic(): currentURL => customerslist
+[24-May-2022 10:27:13 Europe/Berlin] PHP Notice:  Undefined index: site in C:\xampp\htdocs\restaurant-app\classes\sessionController.php on line 151
+[24-May-2022 10:27:13 Europe/Berlin] sessionController::getCurrentPage(): actualLink =>/restaurant-app/customerslist, url => customerslist
+[24-May-2022 10:27:13 Europe/Berlin] PHP Notice:  Undefined index: site in C:\xampp\htdocs\restaurant-app\classes\sessionController.php on line 188
+[24-May-2022 10:27:13 Europe/Berlin] SessionController::validateSession() => autorizado, lo deja pasar
+[24-May-2022 10:27:13 Europe/Berlin] sessionController::getUserSessionData(): stuwargg
+[24-May-2022 10:27:13 Europe/Berlin] Customerslist::construct-> inicio de Customers List
+[24-May-2022 10:27:15 Europe/Berlin] Inicio de aplicación web!
+[24-May-2022 10:27:15 Europe/Berlin] SessionController::validateSession()
+[24-May-2022 10:27:15 Europe/Berlin] sessionController::getUserSessionData(): stuwargg
+[24-May-2022 10:27:15 Europe/Berlin] sessionController::validateSession(): username:stuwargg - role: admin
+[24-May-2022 10:27:15 Europe/Berlin] sessionController::getCurrentPage(): actualLink =>/restaurant-app/categories, url => categories
+[24-May-2022 10:27:15 Europe/Berlin] sessionController::isPublic(): currentURL => categories
+[24-May-2022 10:27:15 Europe/Berlin] PHP Notice:  Undefined index: site in C:\xampp\htdocs\restaurant-app\classes\sessionController.php on line 151
+[24-May-2022 10:27:15 Europe/Berlin] sessionController::getCurrentPage(): actualLink =>/restaurant-app/categories, url => categories
+[24-May-2022 10:27:15 Europe/Berlin] PHP Notice:  Undefined index: site in C:\xampp\htdocs\restaurant-app\classes\sessionController.php on line 188
+[24-May-2022 10:27:15 Europe/Berlin] SessionController::validateSession() => autorizado, lo deja pasar
+[24-May-2022 10:27:15 Europe/Berlin] sessionController::getUserSessionData(): stuwargg
+[24-May-2022 10:27:15 Europe/Berlin] Categorias::construct()
+[24-May-2022 10:27:15 Europe/Berlin] Categorias::RENDER() 
+[24-May-2022 10:27:28 Europe/Berlin] Inicio de aplicación web!
+[24-May-2022 10:27:28 Europe/Berlin] SessionController::validateSession()
+[24-May-2022 10:27:28 Europe/Berlin] sessionController::getUserSessionData(): stuwargg
+[24-May-2022 10:27:28 Europe/Berlin] sessionController::validateSession(): username:stuwargg - role: admin
+[24-May-2022 10:27:28 Europe/Berlin] sessionController::getCurrentPage(): actualLink =>/restaurant-app/addemployees, url => addemployees
+[24-May-2022 10:27:28 Europe/Berlin] sessionController::isPublic(): currentURL => addemployees
+[24-May-2022 10:27:28 Europe/Berlin] PHP Notice:  Undefined index: site in C:\xampp\htdocs\restaurant-app\classes\sessionController.php on line 151
+[24-May-2022 10:27:28 Europe/Berlin] sessionController::getCurrentPage(): actualLink =>/restaurant-app/addemployees, url => addemployees
+[24-May-2022 10:27:28 Europe/Berlin] PHP Notice:  Undefined index: site in C:\xampp\htdocs\restaurant-app\classes\sessionController.php on line 188
+[24-May-2022 10:27:28 Europe/Berlin] SessionController::validateSession() => autorizado, lo deja pasar
+[24-May-2022 10:27:28 Europe/Berlin] sessionController::getUserSessionData(): stuwargg
+[24-May-2022 10:27:30 Europe/Berlin] Inicio de aplicación web!
+[24-May-2022 10:27:30 Europe/Berlin] SessionController::validateSession()
+[24-May-2022 10:27:30 Europe/Berlin] sessionController::getUserSessionData(): stuwargg
+[24-May-2022 10:27:30 Europe/Berlin] sessionController::validateSession(): username:stuwargg - role: admin
+[24-May-2022 10:27:30 Europe/Berlin] sessionController::getCurrentPage(): actualLink =>/restaurant-app/customerslist, url => customerslist
+[24-May-2022 10:27:30 Europe/Berlin] sessionController::isPublic(): currentURL => customerslist
+[24-May-2022 10:27:30 Europe/Berlin] PHP Notice:  Undefined index: site in C:\xampp\htdocs\restaurant-app\classes\sessionController.php on line 151
+[24-May-2022 10:27:30 Europe/Berlin] sessionController::getCurrentPage(): actualLink =>/restaurant-app/customerslist, url => customerslist
+[24-May-2022 10:27:30 Europe/Berlin] PHP Notice:  Undefined index: site in C:\xampp\htdocs\restaurant-app\classes\sessionController.php on line 188
+[24-May-2022 10:27:30 Europe/Berlin] SessionController::validateSession() => autorizado, lo deja pasar
+[24-May-2022 10:27:30 Europe/Berlin] sessionController::getUserSessionData(): stuwargg
+[24-May-2022 10:27:30 Europe/Berlin] Customerslist::construct-> inicio de Customers List
+[24-May-2022 10:29:19 Europe/Berlin] Inicio de aplicación web!
+[24-May-2022 10:29:19 Europe/Berlin] SessionController::validateSession()
+[24-May-2022 10:29:19 Europe/Berlin] sessionController::getUserSessionData(): stuwargg
+[24-May-2022 10:29:19 Europe/Berlin] sessionController::validateSession(): username:stuwargg - role: admin
+[24-May-2022 10:29:19 Europe/Berlin] sessionController::getCurrentPage(): actualLink =>/restaurant-app/addemployees, url => addemployees
+[24-May-2022 10:29:19 Europe/Berlin] sessionController::isPublic(): currentURL => addemployees
+[24-May-2022 10:29:19 Europe/Berlin] PHP Notice:  Undefined index: site in C:\xampp\htdocs\restaurant-app\classes\sessionController.php on line 151
+[24-May-2022 10:29:19 Europe/Berlin] sessionController::getCurrentPage(): actualLink =>/restaurant-app/addemployees, url => addemployees
+[24-May-2022 10:29:19 Europe/Berlin] PHP Notice:  Undefined index: site in C:\xampp\htdocs\restaurant-app\classes\sessionController.php on line 188
+[24-May-2022 10:29:19 Europe/Berlin] SessionController::validateSession() => autorizado, lo deja pasar
+[24-May-2022 10:29:19 Europe/Berlin] sessionController::getUserSessionData(): stuwargg
+[24-May-2022 10:29:26 Europe/Berlin] Inicio de aplicación web!
+[24-May-2022 10:29:26 Europe/Berlin] SessionController::validateSession()
+[24-May-2022 10:29:26 Europe/Berlin] sessionController::getUserSessionData(): stuwargg
+[24-May-2022 10:29:26 Europe/Berlin] sessionController::validateSession(): username:stuwargg - role: admin
+[24-May-2022 10:29:26 Europe/Berlin] sessionController::getCurrentPage(): actualLink =>/restaurant-app/customerslist, url => customerslist
+[24-May-2022 10:29:26 Europe/Berlin] sessionController::isPublic(): currentURL => customerslist
+[24-May-2022 10:29:26 Europe/Berlin] PHP Notice:  Undefined index: site in C:\xampp\htdocs\restaurant-app\classes\sessionController.php on line 151
+[24-May-2022 10:29:26 Europe/Berlin] sessionController::getCurrentPage(): actualLink =>/restaurant-app/customerslist, url => customerslist
+[24-May-2022 10:29:26 Europe/Berlin] PHP Notice:  Undefined index: site in C:\xampp\htdocs\restaurant-app\classes\sessionController.php on line 188
+[24-May-2022 10:29:26 Europe/Berlin] SessionController::validateSession() => autorizado, lo deja pasar
+[24-May-2022 10:29:26 Europe/Berlin] sessionController::getUserSessionData(): stuwargg
+[24-May-2022 10:29:26 Europe/Berlin] Customerslist::construct-> inicio de Customers List
+[24-May-2022 10:30:46 Europe/Berlin] Inicio de aplicación web!
+[24-May-2022 10:30:46 Europe/Berlin] SessionController::validateSession()
+[24-May-2022 10:30:46 Europe/Berlin] sessionController::getUserSessionData(): stuwargg
+[24-May-2022 10:30:46 Europe/Berlin] sessionController::validateSession(): username:stuwargg - role: admin
+[24-May-2022 10:30:46 Europe/Berlin] sessionController::getCurrentPage(): actualLink =>/restaurant-app/customerslist, url => customerslist
+[24-May-2022 10:30:46 Europe/Berlin] sessionController::isPublic(): currentURL => customerslist
+[24-May-2022 10:30:46 Europe/Berlin] PHP Notice:  Undefined index: site in C:\xampp\htdocs\restaurant-app\classes\sessionController.php on line 151
+[24-May-2022 10:30:46 Europe/Berlin] sessionController::getCurrentPage(): actualLink =>/restaurant-app/customerslist, url => customerslist
+[24-May-2022 10:30:46 Europe/Berlin] PHP Notice:  Undefined index: site in C:\xampp\htdocs\restaurant-app\classes\sessionController.php on line 188
+[24-May-2022 10:30:46 Europe/Berlin] SessionController::validateSession() => autorizado, lo deja pasar
+[24-May-2022 10:30:46 Europe/Berlin] sessionController::getUserSessionData(): stuwargg
+[24-May-2022 10:30:46 Europe/Berlin] Customerslist::construct-> inicio de Customers List
+[24-May-2022 10:39:43 Europe/Berlin] Inicio de aplicación web!
+[24-May-2022 10:39:43 Europe/Berlin] SessionController::validateSession()
+[24-May-2022 10:39:43 Europe/Berlin] sessionController::getUserSessionData(): stuwargg
+[24-May-2022 10:39:43 Europe/Berlin] sessionController::validateSession(): username:stuwargg - role: admin
+[24-May-2022 10:39:43 Europe/Berlin] sessionController::getCurrentPage(): actualLink =>/restaurant-app/categories, url => categories
+[24-May-2022 10:39:43 Europe/Berlin] sessionController::isPublic(): currentURL => categories
+[24-May-2022 10:39:43 Europe/Berlin] PHP Notice:  Undefined index: site in C:\xampp\htdocs\restaurant-app\classes\sessionController.php on line 151
+[24-May-2022 10:39:43 Europe/Berlin] sessionController::getCurrentPage(): actualLink =>/restaurant-app/categories, url => categories
+[24-May-2022 10:39:43 Europe/Berlin] PHP Notice:  Undefined index: site in C:\xampp\htdocs\restaurant-app\classes\sessionController.php on line 188
+[24-May-2022 10:39:43 Europe/Berlin] SessionController::validateSession() => autorizado, lo deja pasar
+[24-May-2022 10:39:44 Europe/Berlin] sessionController::getUserSessionData(): stuwargg
+[24-May-2022 10:39:44 Europe/Berlin] Categorias::construct()
+[24-May-2022 10:39:44 Europe/Berlin] Categorias::RENDER() 
+[24-May-2022 10:39:54 Europe/Berlin] Inicio de aplicación web!
+[24-May-2022 10:39:54 Europe/Berlin] SessionController::validateSession()
+[24-May-2022 10:39:54 Europe/Berlin] sessionController::getUserSessionData(): stuwargg
+[24-May-2022 10:39:54 Europe/Berlin] sessionController::validateSession(): username:stuwargg - role: admin
+[24-May-2022 10:39:54 Europe/Berlin] sessionController::getCurrentPage(): actualLink =>/restaurant-app/categories, url => categories
+[24-May-2022 10:39:54 Europe/Berlin] sessionController::isPublic(): currentURL => categories
+[24-May-2022 10:39:54 Europe/Berlin] PHP Notice:  Undefined index: site in C:\xampp\htdocs\restaurant-app\classes\sessionController.php on line 151
+[24-May-2022 10:39:54 Europe/Berlin] sessionController::getCurrentPage(): actualLink =>/restaurant-app/categories, url => categories
+[24-May-2022 10:39:54 Europe/Berlin] PHP Notice:  Undefined index: site in C:\xampp\htdocs\restaurant-app\classes\sessionController.php on line 188
+[24-May-2022 10:39:54 Europe/Berlin] SessionController::validateSession() => autorizado, lo deja pasar
+[24-May-2022 10:39:54 Europe/Berlin] sessionController::getUserSessionData(): stuwargg
+[24-May-2022 10:39:54 Europe/Berlin] Categorias::construct()
+[24-May-2022 10:39:54 Europe/Berlin] Categorias::RENDER() 
+[24-May-2022 10:40:25 Europe/Berlin] Inicio de aplicación web!
+[24-May-2022 10:40:25 Europe/Berlin] SessionController::validateSession()
+[24-May-2022 10:40:25 Europe/Berlin] sessionController::getUserSessionData(): stuwargg
+[24-May-2022 10:40:25 Europe/Berlin] sessionController::validateSession(): username:stuwargg - role: admin
+[24-May-2022 10:40:25 Europe/Berlin] sessionController::getCurrentPage(): actualLink =>/restaurant-app/categories, url => categories
+[24-May-2022 10:40:25 Europe/Berlin] sessionController::isPublic(): currentURL => categories
+[24-May-2022 10:40:25 Europe/Berlin] PHP Notice:  Undefined index: site in C:\xampp\htdocs\restaurant-app\classes\sessionController.php on line 151
+[24-May-2022 10:40:26 Europe/Berlin] sessionController::getCurrentPage(): actualLink =>/restaurant-app/categories, url => categories
+[24-May-2022 10:40:26 Europe/Berlin] PHP Notice:  Undefined index: site in C:\xampp\htdocs\restaurant-app\classes\sessionController.php on line 188
+[24-May-2022 10:40:26 Europe/Berlin] SessionController::validateSession() => autorizado, lo deja pasar
+[24-May-2022 10:40:26 Europe/Berlin] sessionController::getUserSessionData(): stuwargg
+[24-May-2022 10:40:26 Europe/Berlin] Categorias::construct()
+[24-May-2022 10:40:26 Europe/Berlin] Categorias::RENDER() 
+[24-May-2022 10:40:27 Europe/Berlin] Inicio de aplicación web!
+[24-May-2022 10:40:27 Europe/Berlin] SessionController::validateSession()
+[24-May-2022 10:40:27 Europe/Berlin] sessionController::getUserSessionData(): stuwargg
+[24-May-2022 10:40:27 Europe/Berlin] sessionController::validateSession(): username:stuwargg - role: admin
+[24-May-2022 10:40:27 Europe/Berlin] sessionController::getCurrentPage(): actualLink =>/restaurant-app/categories/delete/$%7Bmostrar.id%7D, url => categories
+[24-May-2022 10:40:27 Europe/Berlin] sessionController::isPublic(): currentURL => categories
+[24-May-2022 10:40:27 Europe/Berlin] PHP Notice:  Undefined index: site in C:\xampp\htdocs\restaurant-app\classes\sessionController.php on line 151
+[24-May-2022 10:40:27 Europe/Berlin] sessionController::getCurrentPage(): actualLink =>/restaurant-app/categories/delete/$%7Bmostrar.id%7D, url => categories
+[24-May-2022 10:40:27 Europe/Berlin] PHP Notice:  Undefined index: site in C:\xampp\htdocs\restaurant-app\classes\sessionController.php on line 188
+[24-May-2022 10:40:27 Europe/Berlin] SessionController::validateSession() => autorizado, lo deja pasar
+[24-May-2022 10:40:27 Europe/Berlin] sessionController::getUserSessionData(): stuwargg
+[24-May-2022 10:40:27 Europe/Berlin] Categorias::construct()
+[24-May-2022 10:40:27 Europe/Berlin] Expenses::delete()
+[24-May-2022 10:40:27 Europe/Berlin] Categories::delete() id = ${mostrar.id}
+[24-May-2022 10:40:27 Europe/Berlin] Inicio de aplicación web!
+[24-May-2022 10:40:27 Europe/Berlin] SessionController::validateSession()
+[24-May-2022 10:40:27 Europe/Berlin] sessionController::getUserSessionData(): stuwargg
+[24-May-2022 10:40:27 Europe/Berlin] sessionController::validateSession(): username:stuwargg - role: admin
+[24-May-2022 10:40:27 Europe/Berlin] sessionController::getCurrentPage(): actualLink =>/restaurant-app/categories?success=fcd919285d5759328b143801573ec47d, url => categories?success=fcd919285d5759328b143801573ec47d
+[24-May-2022 10:40:27 Europe/Berlin] sessionController::isPublic(): currentURL => categories?success=fcd919285d5759328b143801573ec47d
+[24-May-2022 10:40:27 Europe/Berlin] PHP Notice:  Undefined index: site in C:\xampp\htdocs\restaurant-app\classes\sessionController.php on line 151
+[24-May-2022 10:40:27 Europe/Berlin] sessionController::getCurrentPage(): actualLink =>/restaurant-app/categories?success=fcd919285d5759328b143801573ec47d, url => categories?success=fcd919285d5759328b143801573ec47d
+[24-May-2022 10:40:27 Europe/Berlin] PHP Notice:  Undefined index: site in C:\xampp\htdocs\restaurant-app\classes\sessionController.php on line 188
+[24-May-2022 10:40:27 Europe/Berlin] SessionController::validateSession() => autorizado, lo deja pasar
+[24-May-2022 10:40:27 Europe/Berlin] sessionController::getUserSessionData(): stuwargg
+[24-May-2022 10:40:27 Europe/Berlin] Categorias::construct()
+[24-May-2022 10:40:27 Europe/Berlin] Categorias::RENDER() 
+[24-May-2022 10:40:27 Europe/Berlin] View::handleError() existsKey =>1
+[24-May-2022 10:41:45 Europe/Berlin] Inicio de aplicación web!
+[24-May-2022 10:41:45 Europe/Berlin] SessionController::validateSession()
+[24-May-2022 10:41:45 Europe/Berlin] sessionController::getUserSessionData(): stuwargg
+[24-May-2022 10:41:45 Europe/Berlin] sessionController::validateSession(): username:stuwargg - role: admin
+[24-May-2022 10:41:45 Europe/Berlin] sessionController::getCurrentPage(): actualLink =>/restaurant-app/categories?success=fcd919285d5759328b143801573ec47d, url => categories?success=fcd919285d5759328b143801573ec47d
+[24-May-2022 10:41:45 Europe/Berlin] sessionController::isPublic(): currentURL => categories?success=fcd919285d5759328b143801573ec47d
+[24-May-2022 10:41:45 Europe/Berlin] PHP Notice:  Undefined index: site in C:\xampp\htdocs\restaurant-app\classes\sessionController.php on line 151
+[24-May-2022 10:41:45 Europe/Berlin] sessionController::getCurrentPage(): actualLink =>/restaurant-app/categories?success=fcd919285d5759328b143801573ec47d, url => categories?success=fcd919285d5759328b143801573ec47d
+[24-May-2022 10:41:45 Europe/Berlin] PHP Notice:  Undefined index: site in C:\xampp\htdocs\restaurant-app\classes\sessionController.php on line 188
+[24-May-2022 10:41:45 Europe/Berlin] SessionController::validateSession() => autorizado, lo deja pasar
+[24-May-2022 10:41:45 Europe/Berlin] sessionController::getUserSessionData(): stuwargg
+[24-May-2022 10:41:45 Europe/Berlin] Categorias::construct()
+[24-May-2022 10:41:45 Europe/Berlin] Categorias::RENDER() 
+[24-May-2022 10:41:45 Europe/Berlin] View::handleError() existsKey =>1
+[24-May-2022 10:41:47 Europe/Berlin] Inicio de aplicación web!
+[24-May-2022 10:41:47 Europe/Berlin] SessionController::validateSession()
+[24-May-2022 10:41:47 Europe/Berlin] sessionController::getUserSessionData(): stuwargg
+[24-May-2022 10:41:47 Europe/Berlin] sessionController::validateSession(): username:stuwargg - role: admin
+[24-May-2022 10:41:47 Europe/Berlin] sessionController::getCurrentPage(): actualLink =>/restaurant-app/categories/delete/, url => categories
+[24-May-2022 10:41:47 Europe/Berlin] sessionController::isPublic(): currentURL => categories
+[24-May-2022 10:41:47 Europe/Berlin] PHP Notice:  Undefined index: site in C:\xampp\htdocs\restaurant-app\classes\sessionController.php on line 151
+[24-May-2022 10:41:47 Europe/Berlin] sessionController::getCurrentPage(): actualLink =>/restaurant-app/categories/delete/, url => categories
+[24-May-2022 10:41:47 Europe/Berlin] PHP Notice:  Undefined index: site in C:\xampp\htdocs\restaurant-app\classes\sessionController.php on line 188
+[24-May-2022 10:41:47 Europe/Berlin] SessionController::validateSession() => autorizado, lo deja pasar
+[24-May-2022 10:41:47 Europe/Berlin] sessionController::getUserSessionData(): stuwargg
+[24-May-2022 10:41:47 Europe/Berlin] Categorias::construct()
+[24-May-2022 10:41:47 Europe/Berlin] PHP Fatal error:  Uncaught ArgumentCountError: Too few arguments to function Categories::delete(), 0 passed in C:\xampp\htdocs\restaurant-app\libs\app.php on line 49 and exactly 1 expected in C:\xampp\htdocs\restaurant-app\controllers\categories.php:42
+Stack trace:
+#0 C:\xampp\htdocs\restaurant-app\libs\app.php(49): Categories->delete()
+#1 C:\xampp\htdocs\restaurant-app\index.php(42): App->__construct()
+#2 {main}
+  thrown in C:\xampp\htdocs\restaurant-app\controllers\categories.php on line 42
+[24-May-2022 10:43:27 Europe/Berlin] Inicio de aplicación web!
+[24-May-2022 10:43:27 Europe/Berlin] SessionController::validateSession()
+[24-May-2022 10:43:27 Europe/Berlin] sessionController::getUserSessionData(): stuwargg
+[24-May-2022 10:43:27 Europe/Berlin] sessionController::validateSession(): username:stuwargg - role: admin
+[24-May-2022 10:43:27 Europe/Berlin] sessionController::getCurrentPage(): actualLink =>/restaurant-app/categories?success=fcd919285d5759328b143801573ec47d, url => categories?success=fcd919285d5759328b143801573ec47d
+[24-May-2022 10:43:27 Europe/Berlin] sessionController::isPublic(): currentURL => categories?success=fcd919285d5759328b143801573ec47d
+[24-May-2022 10:43:27 Europe/Berlin] PHP Notice:  Undefined index: site in C:\xampp\htdocs\restaurant-app\classes\sessionController.php on line 151
+[24-May-2022 10:43:27 Europe/Berlin] sessionController::getCurrentPage(): actualLink =>/restaurant-app/categories?success=fcd919285d5759328b143801573ec47d, url => categories?success=fcd919285d5759328b143801573ec47d
+[24-May-2022 10:43:27 Europe/Berlin] PHP Notice:  Undefined index: site in C:\xampp\htdocs\restaurant-app\classes\sessionController.php on line 188
+[24-May-2022 10:43:27 Europe/Berlin] SessionController::validateSession() => autorizado, lo deja pasar
+[24-May-2022 10:43:27 Europe/Berlin] sessionController::getUserSessionData(): stuwargg
+[24-May-2022 10:43:27 Europe/Berlin] Categorias::construct()
+[24-May-2022 10:43:27 Europe/Berlin] Categorias::RENDER() 
+[24-May-2022 10:43:27 Europe/Berlin] View::handleError() existsKey =>1
+[24-May-2022 10:43:29 Europe/Berlin] Inicio de aplicación web!
+[24-May-2022 10:43:29 Europe/Berlin] SessionController::validateSession()
+[24-May-2022 10:43:29 Europe/Berlin] sessionController::getUserSessionData(): stuwargg
+[24-May-2022 10:43:29 Europe/Berlin] sessionController::validateSession(): username:stuwargg - role: admin
+[24-May-2022 10:43:29 Europe/Berlin] sessionController::getCurrentPage(): actualLink =>/restaurant-app/categories/delete/$%7Bmostrar.id%7D, url => categories
+[24-May-2022 10:43:29 Europe/Berlin] sessionController::isPublic(): currentURL => categories
+[24-May-2022 10:43:29 Europe/Berlin] PHP Notice:  Undefined index: site in C:\xampp\htdocs\restaurant-app\classes\sessionController.php on line 151
+[24-May-2022 10:43:29 Europe/Berlin] sessionController::getCurrentPage(): actualLink =>/restaurant-app/categories/delete/$%7Bmostrar.id%7D, url => categories
+[24-May-2022 10:43:29 Europe/Berlin] PHP Notice:  Undefined index: site in C:\xampp\htdocs\restaurant-app\classes\sessionController.php on line 188
+[24-May-2022 10:43:29 Europe/Berlin] SessionController::validateSession() => autorizado, lo deja pasar
+[24-May-2022 10:43:29 Europe/Berlin] sessionController::getUserSessionData(): stuwargg
+[24-May-2022 10:43:29 Europe/Berlin] Categorias::construct()
+[24-May-2022 10:43:29 Europe/Berlin] Expenses::delete()
+[24-May-2022 10:43:29 Europe/Berlin] Categories::delete() id = ${mostrar.id}
+[24-May-2022 10:43:29 Europe/Berlin] Inicio de aplicación web!
+[24-May-2022 10:43:29 Europe/Berlin] SessionController::validateSession()
+[24-May-2022 10:43:29 Europe/Berlin] sessionController::getUserSessionData(): stuwargg
+[24-May-2022 10:43:29 Europe/Berlin] sessionController::validateSession(): username:stuwargg - role: admin
+[24-May-2022 10:43:29 Europe/Berlin] sessionController::getCurrentPage(): actualLink =>/restaurant-app/categories?success=fcd919285d5759328b143801573ec47d, url => categories?success=fcd919285d5759328b143801573ec47d
+[24-May-2022 10:43:29 Europe/Berlin] sessionController::isPublic(): currentURL => categories?success=fcd919285d5759328b143801573ec47d
+[24-May-2022 10:43:29 Europe/Berlin] PHP Notice:  Undefined index: site in C:\xampp\htdocs\restaurant-app\classes\sessionController.php on line 151
+[24-May-2022 10:43:29 Europe/Berlin] sessionController::getCurrentPage(): actualLink =>/restaurant-app/categories?success=fcd919285d5759328b143801573ec47d, url => categories?success=fcd919285d5759328b143801573ec47d
+[24-May-2022 10:43:29 Europe/Berlin] PHP Notice:  Undefined index: site in C:\xampp\htdocs\restaurant-app\classes\sessionController.php on line 188
+[24-May-2022 10:43:29 Europe/Berlin] SessionController::validateSession() => autorizado, lo deja pasar
+[24-May-2022 10:43:29 Europe/Berlin] sessionController::getUserSessionData(): stuwargg
+[24-May-2022 10:43:29 Europe/Berlin] Categorias::construct()
+[24-May-2022 10:43:29 Europe/Berlin] Categorias::RENDER() 
+[24-May-2022 10:43:29 Europe/Berlin] View::handleError() existsKey =>1
+[24-May-2022 10:43:32 Europe/Berlin] Inicio de aplicación web!
+[24-May-2022 10:43:32 Europe/Berlin] SessionController::validateSession()
+[24-May-2022 10:43:32 Europe/Berlin] sessionController::getUserSessionData(): stuwargg
+[24-May-2022 10:43:32 Europe/Berlin] sessionController::validateSession(): username:stuwargg - role: admin
+[24-May-2022 10:43:32 Europe/Berlin] sessionController::getCurrentPage(): actualLink =>/restaurant-app/categories/delete/$%7Bmostrar.id%7D, url => categories
+[24-May-2022 10:43:32 Europe/Berlin] sessionController::isPublic(): currentURL => categories
+[24-May-2022 10:43:32 Europe/Berlin] PHP Notice:  Undefined index: site in C:\xampp\htdocs\restaurant-app\classes\sessionController.php on line 151
+[24-May-2022 10:43:32 Europe/Berlin] sessionController::getCurrentPage(): actualLink =>/restaurant-app/categories/delete/$%7Bmostrar.id%7D, url => categories
+[24-May-2022 10:43:32 Europe/Berlin] PHP Notice:  Undefined index: site in C:\xampp\htdocs\restaurant-app\classes\sessionController.php on line 188
+[24-May-2022 10:43:32 Europe/Berlin] SessionController::validateSession() => autorizado, lo deja pasar
+[24-May-2022 10:43:32 Europe/Berlin] sessionController::getUserSessionData(): stuwargg
+[24-May-2022 10:43:32 Europe/Berlin] Categorias::construct()
+[24-May-2022 10:43:32 Europe/Berlin] Expenses::delete()
+[24-May-2022 10:43:32 Europe/Berlin] Categories::delete() id = ${mostrar.id}
+[24-May-2022 10:43:32 Europe/Berlin] Inicio de aplicación web!
+[24-May-2022 10:43:32 Europe/Berlin] SessionController::validateSession()
+[24-May-2022 10:43:32 Europe/Berlin] sessionController::getUserSessionData(): stuwargg
+[24-May-2022 10:43:32 Europe/Berlin] sessionController::validateSession(): username:stuwargg - role: admin
+[24-May-2022 10:43:32 Europe/Berlin] sessionController::getCurrentPage(): actualLink =>/restaurant-app/categories?success=fcd919285d5759328b143801573ec47d, url => categories?success=fcd919285d5759328b143801573ec47d
+[24-May-2022 10:43:32 Europe/Berlin] sessionController::isPublic(): currentURL => categories?success=fcd919285d5759328b143801573ec47d
+[24-May-2022 10:43:32 Europe/Berlin] PHP Notice:  Undefined index: site in C:\xampp\htdocs\restaurant-app\classes\sessionController.php on line 151
+[24-May-2022 10:43:32 Europe/Berlin] sessionController::getCurrentPage(): actualLink =>/restaurant-app/categories?success=fcd919285d5759328b143801573ec47d, url => categories?success=fcd919285d5759328b143801573ec47d
+[24-May-2022 10:43:32 Europe/Berlin] PHP Notice:  Undefined index: site in C:\xampp\htdocs\restaurant-app\classes\sessionController.php on line 188
+[24-May-2022 10:43:32 Europe/Berlin] SessionController::validateSession() => autorizado, lo deja pasar
+[24-May-2022 10:43:32 Europe/Berlin] sessionController::getUserSessionData(): stuwargg
+[24-May-2022 10:43:32 Europe/Berlin] Categorias::construct()
+[24-May-2022 10:43:32 Europe/Berlin] Categorias::RENDER() 
+[24-May-2022 10:43:32 Europe/Berlin] View::handleError() existsKey =>1
+[24-May-2022 10:50:52 Europe/Berlin] Inicio de aplicación web!
+[24-May-2022 10:50:52 Europe/Berlin] SessionController::validateSession()
+[24-May-2022 10:50:52 Europe/Berlin] sessionController::getUserSessionData(): stuwargg
+[24-May-2022 10:50:52 Europe/Berlin] sessionController::validateSession(): username:stuwargg - role: admin
+[24-May-2022 10:50:52 Europe/Berlin] sessionController::getCurrentPage(): actualLink =>/restaurant-app/categories?success=fcd919285d5759328b143801573ec47d, url => categories?success=fcd919285d5759328b143801573ec47d
+[24-May-2022 10:50:52 Europe/Berlin] sessionController::isPublic(): currentURL => categories?success=fcd919285d5759328b143801573ec47d
+[24-May-2022 10:50:52 Europe/Berlin] PHP Notice:  Undefined index: site in C:\xampp\htdocs\restaurant-app\classes\sessionController.php on line 151
+[24-May-2022 10:50:52 Europe/Berlin] sessionController::getCurrentPage(): actualLink =>/restaurant-app/categories?success=fcd919285d5759328b143801573ec47d, url => categories?success=fcd919285d5759328b143801573ec47d
+[24-May-2022 10:50:52 Europe/Berlin] PHP Notice:  Undefined index: site in C:\xampp\htdocs\restaurant-app\classes\sessionController.php on line 188
+[24-May-2022 10:50:52 Europe/Berlin] SessionController::validateSession() => autorizado, lo deja pasar
+[24-May-2022 10:50:52 Europe/Berlin] sessionController::getUserSessionData(): stuwargg
+[24-May-2022 10:50:52 Europe/Berlin] Categorias::construct()
+[24-May-2022 10:50:52 Europe/Berlin] Categorias::RENDER() 
+[24-May-2022 10:50:52 Europe/Berlin] View::handleError() existsKey =>1
+[24-May-2022 10:51:06 Europe/Berlin] Inicio de aplicación web!
+[24-May-2022 10:51:06 Europe/Berlin] SessionController::validateSession()
+[24-May-2022 10:51:06 Europe/Berlin] sessionController::getUserSessionData(): stuwargg
+[24-May-2022 10:51:06 Europe/Berlin] sessionController::validateSession(): username:stuwargg - role: admin
+[24-May-2022 10:51:06 Europe/Berlin] sessionController::getCurrentPage(): actualLink =>/restaurant-app/categories?success=fcd919285d5759328b143801573ec47d, url => categories?success=fcd919285d5759328b143801573ec47d
+[24-May-2022 10:51:06 Europe/Berlin] sessionController::isPublic(): currentURL => categories?success=fcd919285d5759328b143801573ec47d
+[24-May-2022 10:51:06 Europe/Berlin] PHP Notice:  Undefined index: site in C:\xampp\htdocs\restaurant-app\classes\sessionController.php on line 151
+[24-May-2022 10:51:06 Europe/Berlin] sessionController::getCurrentPage(): actualLink =>/restaurant-app/categories?success=fcd919285d5759328b143801573ec47d, url => categories?success=fcd919285d5759328b143801573ec47d
+[24-May-2022 10:51:06 Europe/Berlin] PHP Notice:  Undefined index: site in C:\xampp\htdocs\restaurant-app\classes\sessionController.php on line 188
+[24-May-2022 10:51:06 Europe/Berlin] SessionController::validateSession() => autorizado, lo deja pasar
+[24-May-2022 10:51:06 Europe/Berlin] sessionController::getUserSessionData(): stuwargg
+[24-May-2022 10:51:06 Europe/Berlin] Categorias::construct()
+[24-May-2022 10:51:06 Europe/Berlin] Categorias::RENDER() 
+[24-May-2022 10:51:06 Europe/Berlin] View::handleError() existsKey =>1
+[24-May-2022 10:55:10 Europe/Berlin] Inicio de aplicación web!
+[24-May-2022 10:55:10 Europe/Berlin] SessionController::validateSession()
+[24-May-2022 10:55:10 Europe/Berlin] sessionController::getUserSessionData(): stuwargg
+[24-May-2022 10:55:10 Europe/Berlin] sessionController::validateSession(): username:stuwargg - role: admin
+[24-May-2022 10:55:10 Europe/Berlin] sessionController::getCurrentPage(): actualLink =>/restaurant-app/categories?success=fcd919285d5759328b143801573ec47d, url => categories?success=fcd919285d5759328b143801573ec47d
+[24-May-2022 10:55:10 Europe/Berlin] sessionController::isPublic(): currentURL => categories?success=fcd919285d5759328b143801573ec47d
+[24-May-2022 10:55:10 Europe/Berlin] PHP Notice:  Undefined index: site in C:\xampp\htdocs\restaurant-app\classes\sessionController.php on line 151
+[24-May-2022 10:55:10 Europe/Berlin] sessionController::getCurrentPage(): actualLink =>/restaurant-app/categories?success=fcd919285d5759328b143801573ec47d, url => categories?success=fcd919285d5759328b143801573ec47d
+[24-May-2022 10:55:10 Europe/Berlin] PHP Notice:  Undefined index: site in C:\xampp\htdocs\restaurant-app\classes\sessionController.php on line 188
+[24-May-2022 10:55:10 Europe/Berlin] SessionController::validateSession() => autorizado, lo deja pasar
+[24-May-2022 10:55:10 Europe/Berlin] sessionController::getUserSessionData(): stuwargg
+[24-May-2022 10:55:10 Europe/Berlin] Categorias::construct()
+[24-May-2022 10:55:10 Europe/Berlin] Categorias::RENDER() 
+[24-May-2022 10:55:10 Europe/Berlin] View::handleError() existsKey =>1
+[24-May-2022 10:56:06 Europe/Berlin] Inicio de aplicación web!
+[24-May-2022 10:56:06 Europe/Berlin] SessionController::validateSession()
+[24-May-2022 10:56:06 Europe/Berlin] sessionController::getUserSessionData(): stuwargg
+[24-May-2022 10:56:06 Europe/Berlin] sessionController::validateSession(): username:stuwargg - role: admin
+[24-May-2022 10:56:06 Europe/Berlin] sessionController::getCurrentPage(): actualLink =>/restaurant-app/categories?success=fcd919285d5759328b143801573ec47d, url => categories?success=fcd919285d5759328b143801573ec47d
+[24-May-2022 10:56:06 Europe/Berlin] sessionController::isPublic(): currentURL => categories?success=fcd919285d5759328b143801573ec47d
+[24-May-2022 10:56:06 Europe/Berlin] PHP Notice:  Undefined index: site in C:\xampp\htdocs\restaurant-app\classes\sessionController.php on line 151
+[24-May-2022 10:56:06 Europe/Berlin] sessionController::getCurrentPage(): actualLink =>/restaurant-app/categories?success=fcd919285d5759328b143801573ec47d, url => categories?success=fcd919285d5759328b143801573ec47d
+[24-May-2022 10:56:06 Europe/Berlin] PHP Notice:  Undefined index: site in C:\xampp\htdocs\restaurant-app\classes\sessionController.php on line 188
+[24-May-2022 10:56:06 Europe/Berlin] SessionController::validateSession() => autorizado, lo deja pasar
+[24-May-2022 10:56:06 Europe/Berlin] sessionController::getUserSessionData(): stuwargg
+[24-May-2022 10:56:06 Europe/Berlin] Categorias::construct()
+[24-May-2022 10:56:06 Europe/Berlin] Categorias::RENDER() 
+[24-May-2022 10:56:06 Europe/Berlin] View::handleError() existsKey =>1
+[24-May-2022 10:56:28 Europe/Berlin] Inicio de aplicación web!
+[24-May-2022 10:56:28 Europe/Berlin] SessionController::validateSession()
+[24-May-2022 10:56:28 Europe/Berlin] sessionController::getUserSessionData(): stuwargg
+[24-May-2022 10:56:28 Europe/Berlin] sessionController::validateSession(): username:stuwargg - role: admin
+[24-May-2022 10:56:28 Europe/Berlin] sessionController::getCurrentPage(): actualLink =>/restaurant-app/categories?success=fcd919285d5759328b143801573ec47d, url => categories?success=fcd919285d5759328b143801573ec47d
+[24-May-2022 10:56:28 Europe/Berlin] sessionController::isPublic(): currentURL => categories?success=fcd919285d5759328b143801573ec47d
+[24-May-2022 10:56:28 Europe/Berlin] PHP Notice:  Undefined index: site in C:\xampp\htdocs\restaurant-app\classes\sessionController.php on line 151
+[24-May-2022 10:56:28 Europe/Berlin] sessionController::getCurrentPage(): actualLink =>/restaurant-app/categories?success=fcd919285d5759328b143801573ec47d, url => categories?success=fcd919285d5759328b143801573ec47d
+[24-May-2022 10:56:28 Europe/Berlin] PHP Notice:  Undefined index: site in C:\xampp\htdocs\restaurant-app\classes\sessionController.php on line 188
+[24-May-2022 10:56:28 Europe/Berlin] SessionController::validateSession() => autorizado, lo deja pasar
+[24-May-2022 10:56:28 Europe/Berlin] sessionController::getUserSessionData(): stuwargg
+[24-May-2022 10:56:28 Europe/Berlin] Categorias::construct()
+[24-May-2022 10:56:28 Europe/Berlin] Categorias::RENDER() 
+[24-May-2022 10:56:28 Europe/Berlin] View::handleError() existsKey =>1
+[24-May-2022 10:57:15 Europe/Berlin] Inicio de aplicación web!
+[24-May-2022 10:57:15 Europe/Berlin] SessionController::validateSession()
+[24-May-2022 10:57:15 Europe/Berlin] sessionController::getUserSessionData(): stuwargg
+[24-May-2022 10:57:15 Europe/Berlin] sessionController::validateSession(): username:stuwargg - role: admin
+[24-May-2022 10:57:15 Europe/Berlin] sessionController::getCurrentPage(): actualLink =>/restaurant-app/categories?success=fcd919285d5759328b143801573ec47d, url => categories?success=fcd919285d5759328b143801573ec47d
+[24-May-2022 10:57:15 Europe/Berlin] sessionController::isPublic(): currentURL => categories?success=fcd919285d5759328b143801573ec47d
+[24-May-2022 10:57:15 Europe/Berlin] PHP Notice:  Undefined index: site in C:\xampp\htdocs\restaurant-app\classes\sessionController.php on line 151
+[24-May-2022 10:57:15 Europe/Berlin] sessionController::getCurrentPage(): actualLink =>/restaurant-app/categories?success=fcd919285d5759328b143801573ec47d, url => categories?success=fcd919285d5759328b143801573ec47d
+[24-May-2022 10:57:15 Europe/Berlin] PHP Notice:  Undefined index: site in C:\xampp\htdocs\restaurant-app\classes\sessionController.php on line 188
+[24-May-2022 10:57:15 Europe/Berlin] SessionController::validateSession() => autorizado, lo deja pasar
+[24-May-2022 10:57:15 Europe/Berlin] sessionController::getUserSessionData(): stuwargg
+[24-May-2022 10:57:15 Europe/Berlin] Categorias::construct()
+[24-May-2022 10:57:15 Europe/Berlin] Categorias::RENDER() 
+[24-May-2022 10:57:15 Europe/Berlin] View::handleError() existsKey =>1
+[24-May-2022 10:59:43 Europe/Berlin] Inicio de aplicación web!
+[24-May-2022 10:59:44 Europe/Berlin] SessionController::validateSession()
+[24-May-2022 10:59:44 Europe/Berlin] sessionController::getUserSessionData(): stuwargg
+[24-May-2022 10:59:44 Europe/Berlin] sessionController::validateSession(): username:stuwargg - role: admin
+[24-May-2022 10:59:44 Europe/Berlin] sessionController::getCurrentPage(): actualLink =>/restaurant-app/categories?success=fcd919285d5759328b143801573ec47d, url => categories?success=fcd919285d5759328b143801573ec47d
+[24-May-2022 10:59:44 Europe/Berlin] sessionController::isPublic(): currentURL => categories?success=fcd919285d5759328b143801573ec47d
+[24-May-2022 10:59:44 Europe/Berlin] PHP Notice:  Undefined index: site in C:\xampp\htdocs\restaurant-app\classes\sessionController.php on line 151
+[24-May-2022 10:59:44 Europe/Berlin] sessionController::getCurrentPage(): actualLink =>/restaurant-app/categories?success=fcd919285d5759328b143801573ec47d, url => categories?success=fcd919285d5759328b143801573ec47d
+[24-May-2022 10:59:44 Europe/Berlin] PHP Notice:  Undefined index: site in C:\xampp\htdocs\restaurant-app\classes\sessionController.php on line 188
+[24-May-2022 10:59:44 Europe/Berlin] SessionController::validateSession() => autorizado, lo deja pasar
+[24-May-2022 10:59:44 Europe/Berlin] sessionController::getUserSessionData(): stuwargg
+[24-May-2022 10:59:44 Europe/Berlin] Categorias::construct()
+[24-May-2022 10:59:44 Europe/Berlin] Categorias::RENDER() 
+[24-May-2022 10:59:44 Europe/Berlin] View::handleError() existsKey =>1
+[24-May-2022 11:01:10 Europe/Berlin] Inicio de aplicación web!
+[24-May-2022 11:01:11 Europe/Berlin] SessionController::validateSession()
+[24-May-2022 11:01:11 Europe/Berlin] sessionController::getUserSessionData(): stuwargg
+[24-May-2022 11:01:11 Europe/Berlin] sessionController::validateSession(): username:stuwargg - role: admin
+[24-May-2022 11:01:11 Europe/Berlin] sessionController::getCurrentPage(): actualLink =>/restaurant-app/categories?success=fcd919285d5759328b143801573ec47d, url => categories?success=fcd919285d5759328b143801573ec47d
+[24-May-2022 11:01:11 Europe/Berlin] sessionController::isPublic(): currentURL => categories?success=fcd919285d5759328b143801573ec47d
+[24-May-2022 11:01:11 Europe/Berlin] PHP Notice:  Undefined index: site in C:\xampp\htdocs\restaurant-app\classes\sessionController.php on line 151
+[24-May-2022 11:01:11 Europe/Berlin] sessionController::getCurrentPage(): actualLink =>/restaurant-app/categories?success=fcd919285d5759328b143801573ec47d, url => categories?success=fcd919285d5759328b143801573ec47d
+[24-May-2022 11:01:11 Europe/Berlin] PHP Notice:  Undefined index: site in C:\xampp\htdocs\restaurant-app\classes\sessionController.php on line 188
+[24-May-2022 11:01:11 Europe/Berlin] SessionController::validateSession() => autorizado, lo deja pasar
+[24-May-2022 11:01:11 Europe/Berlin] sessionController::getUserSessionData(): stuwargg
+[24-May-2022 11:01:11 Europe/Berlin] Categorias::construct()
+[24-May-2022 11:01:11 Europe/Berlin] Categorias::RENDER() 
+[24-May-2022 11:01:11 Europe/Berlin] View::handleError() existsKey =>1
+[24-May-2022 11:01:43 Europe/Berlin] Inicio de aplicación web!
+[24-May-2022 11:01:43 Europe/Berlin] SessionController::validateSession()
+[24-May-2022 11:01:43 Europe/Berlin] sessionController::getUserSessionData(): stuwargg
+[24-May-2022 11:01:43 Europe/Berlin] sessionController::validateSession(): username:stuwargg - role: admin
+[24-May-2022 11:01:43 Europe/Berlin] sessionController::getCurrentPage(): actualLink =>/restaurant-app/categories?success=fcd919285d5759328b143801573ec47d, url => categories?success=fcd919285d5759328b143801573ec47d
+[24-May-2022 11:01:43 Europe/Berlin] sessionController::isPublic(): currentURL => categories?success=fcd919285d5759328b143801573ec47d
+[24-May-2022 11:01:43 Europe/Berlin] PHP Notice:  Undefined index: site in C:\xampp\htdocs\restaurant-app\classes\sessionController.php on line 151
+[24-May-2022 11:01:43 Europe/Berlin] sessionController::getCurrentPage(): actualLink =>/restaurant-app/categories?success=fcd919285d5759328b143801573ec47d, url => categories?success=fcd919285d5759328b143801573ec47d
+[24-May-2022 11:01:43 Europe/Berlin] PHP Notice:  Undefined index: site in C:\xampp\htdocs\restaurant-app\classes\sessionController.php on line 188
+[24-May-2022 11:01:43 Europe/Berlin] SessionController::validateSession() => autorizado, lo deja pasar
+[24-May-2022 11:01:43 Europe/Berlin] sessionController::getUserSessionData(): stuwargg
+[24-May-2022 11:01:43 Europe/Berlin] Categorias::construct()
+[24-May-2022 11:01:43 Europe/Berlin] Categorias::RENDER() 
+[24-May-2022 11:01:43 Europe/Berlin] View::handleError() existsKey =>1
+[24-May-2022 11:02:13 Europe/Berlin] Inicio de aplicación web!
+[24-May-2022 11:02:13 Europe/Berlin] SessionController::validateSession()
+[24-May-2022 11:02:13 Europe/Berlin] sessionController::getUserSessionData(): stuwargg
+[24-May-2022 11:02:13 Europe/Berlin] sessionController::validateSession(): username:stuwargg - role: admin
+[24-May-2022 11:02:13 Europe/Berlin] sessionController::getCurrentPage(): actualLink =>/restaurant-app/categories?success=fcd919285d5759328b143801573ec47d, url => categories?success=fcd919285d5759328b143801573ec47d
+[24-May-2022 11:02:13 Europe/Berlin] sessionController::isPublic(): currentURL => categories?success=fcd919285d5759328b143801573ec47d
+[24-May-2022 11:02:13 Europe/Berlin] PHP Notice:  Undefined index: site in C:\xampp\htdocs\restaurant-app\classes\sessionController.php on line 151
+[24-May-2022 11:02:13 Europe/Berlin] sessionController::getCurrentPage(): actualLink =>/restaurant-app/categories?success=fcd919285d5759328b143801573ec47d, url => categories?success=fcd919285d5759328b143801573ec47d
+[24-May-2022 11:02:13 Europe/Berlin] PHP Notice:  Undefined index: site in C:\xampp\htdocs\restaurant-app\classes\sessionController.php on line 188
+[24-May-2022 11:02:13 Europe/Berlin] SessionController::validateSession() => autorizado, lo deja pasar
+[24-May-2022 11:02:13 Europe/Berlin] sessionController::getUserSessionData(): stuwargg
+[24-May-2022 11:02:13 Europe/Berlin] Categorias::construct()
+[24-May-2022 11:02:13 Europe/Berlin] Categorias::RENDER() 
+[24-May-2022 11:02:13 Europe/Berlin] View::handleError() existsKey =>1
+[24-May-2022 11:02:14 Europe/Berlin] Inicio de aplicación web!
+[24-May-2022 11:02:14 Europe/Berlin] SessionController::validateSession()
+[24-May-2022 11:02:14 Europe/Berlin] sessionController::getUserSessionData(): stuwargg
+[24-May-2022 11:02:14 Europe/Berlin] sessionController::validateSession(): username:stuwargg - role: admin
+[24-May-2022 11:02:14 Europe/Berlin] sessionController::getCurrentPage(): actualLink =>/restaurant-app/categories?success=fcd919285d5759328b143801573ec47d, url => categories?success=fcd919285d5759328b143801573ec47d
+[24-May-2022 11:02:14 Europe/Berlin] sessionController::isPublic(): currentURL => categories?success=fcd919285d5759328b143801573ec47d
+[24-May-2022 11:02:14 Europe/Berlin] PHP Notice:  Undefined index: site in C:\xampp\htdocs\restaurant-app\classes\sessionController.php on line 151
+[24-May-2022 11:02:14 Europe/Berlin] sessionController::getCurrentPage(): actualLink =>/restaurant-app/categories?success=fcd919285d5759328b143801573ec47d, url => categories?success=fcd919285d5759328b143801573ec47d
+[24-May-2022 11:02:14 Europe/Berlin] PHP Notice:  Undefined index: site in C:\xampp\htdocs\restaurant-app\classes\sessionController.php on line 188
+[24-May-2022 11:02:14 Europe/Berlin] SessionController::validateSession() => autorizado, lo deja pasar
+[24-May-2022 11:02:14 Europe/Berlin] sessionController::getUserSessionData(): stuwargg
+[24-May-2022 11:02:14 Europe/Berlin] Categorias::construct()
+[24-May-2022 11:02:14 Europe/Berlin] Categorias::RENDER() 
+[24-May-2022 11:02:14 Europe/Berlin] View::handleError() existsKey =>1
+[24-May-2022 11:02:36 Europe/Berlin] Inicio de aplicación web!
+[24-May-2022 11:02:36 Europe/Berlin] SessionController::validateSession()
+[24-May-2022 11:02:36 Europe/Berlin] sessionController::getUserSessionData(): stuwargg
+[24-May-2022 11:02:36 Europe/Berlin] sessionController::validateSession(): username:stuwargg - role: admin
+[24-May-2022 11:02:36 Europe/Berlin] sessionController::getCurrentPage(): actualLink =>/restaurant-app/categories?success=fcd919285d5759328b143801573ec47d, url => categories?success=fcd919285d5759328b143801573ec47d
+[24-May-2022 11:02:36 Europe/Berlin] sessionController::isPublic(): currentURL => categories?success=fcd919285d5759328b143801573ec47d
+[24-May-2022 11:02:36 Europe/Berlin] PHP Notice:  Undefined index: site in C:\xampp\htdocs\restaurant-app\classes\sessionController.php on line 151
+[24-May-2022 11:02:36 Europe/Berlin] sessionController::getCurrentPage(): actualLink =>/restaurant-app/categories?success=fcd919285d5759328b143801573ec47d, url => categories?success=fcd919285d5759328b143801573ec47d
+[24-May-2022 11:02:36 Europe/Berlin] PHP Notice:  Undefined index: site in C:\xampp\htdocs\restaurant-app\classes\sessionController.php on line 188
+[24-May-2022 11:02:36 Europe/Berlin] SessionController::validateSession() => autorizado, lo deja pasar
+[24-May-2022 11:02:36 Europe/Berlin] sessionController::getUserSessionData(): stuwargg
+[24-May-2022 11:02:36 Europe/Berlin] Categorias::construct()
+[24-May-2022 11:02:36 Europe/Berlin] Categorias::RENDER() 
+[24-May-2022 11:02:36 Europe/Berlin] View::handleError() existsKey =>1
+[24-May-2022 11:02:44 Europe/Berlin] Inicio de aplicación web!
+[24-May-2022 11:02:44 Europe/Berlin] SessionController::validateSession()
+[24-May-2022 11:02:44 Europe/Berlin] sessionController::getUserSessionData(): stuwargg
+[24-May-2022 11:02:44 Europe/Berlin] sessionController::validateSession(): username:stuwargg - role: admin
+[24-May-2022 11:02:44 Europe/Berlin] sessionController::getCurrentPage(): actualLink =>/restaurant-app/categories, url => categories
+[24-May-2022 11:02:44 Europe/Berlin] sessionController::isPublic(): currentURL => categories
+[24-May-2022 11:02:44 Europe/Berlin] PHP Notice:  Undefined index: site in C:\xampp\htdocs\restaurant-app\classes\sessionController.php on line 151
+[24-May-2022 11:02:44 Europe/Berlin] sessionController::getCurrentPage(): actualLink =>/restaurant-app/categories, url => categories
+[24-May-2022 11:02:44 Europe/Berlin] PHP Notice:  Undefined index: site in C:\xampp\htdocs\restaurant-app\classes\sessionController.php on line 188
+[24-May-2022 11:02:44 Europe/Berlin] SessionController::validateSession() => autorizado, lo deja pasar
+[24-May-2022 11:02:44 Europe/Berlin] sessionController::getUserSessionData(): stuwargg
+[24-May-2022 11:02:44 Europe/Berlin] Categorias::construct()
+[24-May-2022 11:02:44 Europe/Berlin] Categorias::RENDER() 

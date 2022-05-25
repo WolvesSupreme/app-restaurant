@@ -1,0 +1,71 @@
+:root {
+  font-size: 14px;
+  --primary-color: #6C63FF;
+}
+
+#profile-container {
+  box-sizing: border-box;
+  float: right;
+  margin-right: 10px;
+}
+#profile-container a {
+  color: white;
+  display: inline-block;
+  padding: 9px;
+}
+#profile-container:hover {
+  color: black;
+  background-color: #F9F9F9;
+  text-decoration: none;
+}
+#profile-container:hover a {
+  color: black;
+  background-color: #F9F9F9;
+  text-decoration: none;
+}
+
+#profile-container .photo,
+#profile-container .name {
+  display: inline-block;
+  vertical-align: middle;
+}
+#profile-container .photo img {
+  border-radius: 50%;
+  width: 20px;
+}
+
+#profile-container:hover #submenu {
+  display: block;
+}
+
+#profile-container #submenu {
+  background-color: white;
+  position: absolute;
+  width: 200px;
+  margin-left: -72px;
+  margin-top: -2px;
+  display: none;
+  box-shadow: 0 2px 2px rgba(0, 0, 0, 0.4);
+  border-radius: 5px;
+}
+#profile-container #submenu ul {
+  margin: 0;
+  padding: 0;
+  display: block;
+}
+#profile-container #submenu ul li {
+  list-style: none;
+}
+#profile-container #submenu ul li.divisor {
+  border-bottom: solid 1px #ddd;
+  display: block;
+}
+#profile-container #submenu ul li a {
+  display: block;
+  width: 100%;
+  padding: 10px 10px;
+}
+#profile-container #submenu ul li a:hover {
+  background-color: var(--primary-color);
+  color: white;
+}
